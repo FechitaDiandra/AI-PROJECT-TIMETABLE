@@ -1,89 +1,47 @@
-import json
 import re
 
-# Funcție pentru maparea zilelor săptămânii
-def mapare_zile_saptamanii(text):
-    zile = {
-        "luni": 1,
-        "marți": 2,
-        "miercuri": 3,
-        "joi": 4,
-        "vineri": 5
+def tokenizare(fraza):
+    rezultate = {
+        "profesor": None,
+        "zile": [],
+        "interval": [],
+        "disponibilitate": None,
+        "tip_curs": None,
+        "doar": False,
+        "maxim_ore": None,
+        "curs_inainte_de_laborator": False,
+        "intervale_restrictive": [],
+        "zile_restrictive": [],
+        "preferinte": {
+            "preferinte_zile": [],
+            "preferinte_interval": [],
+        },
     }
-    for zi in zile:
-        if zi in text.lower():
-            return zile[zi]
-    return None
 
-# Funcție pentru maparea intervalelor orare
-def mapare_intervale_orare(text):
-    intervale = {
-        "08:00": 1,
-        "10:00": 2,
-        "12:00": 3,
-        "14:00": 4,
-        "16:00": 5,
-        "18:00": 6
-    }
-    for ora, cod in intervale.items():
-        if ora in text:
-            return cod
-    return None
+    # Caută numele complet al profesorului
+    nume_profesor = re.search(r'Profesorul\s+([A-Z][a-z]+)\s+([A-Z][a-z]+)', fraza)
+    if nume_profesor:
+        rezultate["profesor"] = f"{nume_profesor.group(1)} {nume_profesor.group(2)}"
 
-# Funcție pentru extragerea profesorului din text
-def extragere_profesor(text):
-    match = re.search(r"profesorul (\w+)", text.lower())
-    if match:
-        return match.group(1).capitalize()
-    return None
+    # Caută zilele și intervalele
+    zile_posibile = ["luni", "marți", "miercuri", "joi", "vineri"]
+    intervale_posibile = ["08:00 - 10:00", "10:00 - 12:00", "12:00 - 14:00", "14:00 - 16:00", "16:00 - 18:00", "18:00 - 20:00"]
+    
+    for zi in zile_posibile:
+        if re.search(r'\b' + zi + r'\b', fraza.lower()):
+            rezultate["zile"].append(zi.capitalize())
+            rezultate["preferinte"]["preferinte_zile"].append(zi.capitalize())
+    
+    for interval in intervale_posibile:
+        if re.search(r'\b' + interval + r'\b', fraza):
+            rezultate["interval"].append(interval)
+            rezultate["preferinte"]["preferinte_interval"].append(interval)
 
-# Funcție pentru aplicarea modificărilor în orar
-def aplicare_modificari(orar, mesaj):
-    ziua = mapare_zile_saptamanii(mesaj)
-    interval = mapare_intervale_orare(mesaj)
-    profesor = extragere_profesor(mesaj)
+    if re.search(r'\bdoar\b', fraza.lower()):
+        rezultate["doar"] = True
 
-    if ziua is not None and interval is not None and profesor is not None:
-        for interval_orar in orar:
-            if interval_orar["zi"] == ziua and interval_orar["interval"] == interval:
-                # Verificăm dacă mesajul conține "nu vrea"
-                if "nu vrea" in mesaj.lower():
-                    interval_orar["profesor"] = None  # Eliminăm profesorul din orar
-                    print(f"Orarul a fost actualizat (eliminare): {interval_orar}")
-                elif "vrea" in mesaj.lower():
-                    interval_orar["profesor"] = profesor  # Setăm profesorul
-                    print(f"Orarul a fost actualizat (adăugare): {interval_orar}")
-                return
+    return rezultate
 
-    print("Nu s-au putut aplica modificările. Verificați mesajul de intrare.")
-
-# Citirea orarului din fișier JSON
-def citire_orar_din_fisier(fisier):
-    with open(fisier, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-# Scrierea orarului actualizat în fișier JSON
-def scriere_orar_in_fisier(fisier, orar):
-    with open(fisier, 'w', encoding='utf-8') as f:
-        json.dump(orar, f, indent=4)
-
-# Fișierul orar.json
-fisier_orar = 'orar.json'
-
-# Citim orarul din fișier
-orar = citire_orar_din_fisier(fisier_orar)
-
-# Mesaj de la prompt (exemple)
-mesaj2 = "Profesorul Popescu vrea să aibă cursuri luni de la 08:00 la 10:00."
-
-# Aplicăm modificările pentru mesajul 1
-
-
-# Aplicăm modificările pentru mesajul 2
-aplicare_modificari(orar, mesaj2)
-
-# Scriem orarul actualizat în fișier
-scriere_orar_in_fisier(fisier_orar, orar)
-
-# Afișăm orarul actualizat
-
+fraza_test = input("Introduceți constrângerea: ")
+rezultate = tokenizare(fraza_test)
+print(rezultate)

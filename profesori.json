@@ -1,0 +1,56 @@
+{
+    "profesori": [
+        {
+            "nume": "Prof. Popescu",
+            "disponibilitate": {
+                "luni": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "marti": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "miercuri": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "joi": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "vineri": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                }
+            },
+            "curs_inainte_de_laborator": false
+        },
+        {
+            "nume": "Prof. Ionescu",
+            "disponibilitate": {
+                "luni": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "marti": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "miercuri": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "joi": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                },
+                "vineri": {
+                    "intervale": [],
+                    "maxim_ore": 0
+                }
+            },
+            "curs_inainte_de_laborator": false
+        }
+    ]
+}
