@@ -1,0 +1,272 @@
+[
+    {
+        "zi": 1,
+        "interval": 1,
+        "profesor": "Popescu",
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 1,
+        "interval": 2,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 1,
+        "interval": 3,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 1,
+        "interval": 4,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 1,
+        "interval": 5,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 1,
+        "interval": 6,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 1,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 2,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 3,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 4,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 5,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 2,
+        "interval": 6,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 1,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 2,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 3,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 4,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 5,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 3,
+        "interval": 6,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 1,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 2,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 3,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 4,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 5,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 4,
+        "interval": 6,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 1,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 2,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 3,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 4,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 5,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    },
+    {
+        "zi": 5,
+        "interval": 6,
+        "profesor": null,
+        "sala": null,
+        "grupa": null,
+        "materie": null,
+        "tip": null
+    }
+]
