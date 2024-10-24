@@ -1,0 +1,12 @@
+[
+    {
+        "profesor": "Prof. Popescu",
+        "zi_restrictiva": "vineri",
+        "interval_restrictiv": "10:00 - 12:00"
+    },
+    {
+        "profesor": "Prof. Ionescu",
+        "zi_restrictiva": "joi",
+        "interval_restrictiva": "14:00 - 16:00"
+    }
+]

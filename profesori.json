@@ -4,8 +4,14 @@
             "nume": "Prof. Popescu",
             "disponibilitate": {
                 "luni": {
-                    "intervale": [],
-                    "maxim_ore": 0
+                    "intervale": [
+                        "10:00 - 12:00",
+                        "10:00 - 12:00",
+                        "10:00 - 12:00",
+                        "10:00 - 12:00",
+                        "10:00 - 12:00"
+                    ],
+                    "maxim_ore": 5
                 },
                 "marti": {
                     "intervale": [],
@@ -20,7 +26,10 @@
                     "maxim_ore": 0
                 },
                 "vineri": {
-                    "intervale": [],
+                    "intervale": [
+                        "10.00 - 12.00",
+                        "14:00 - 16:00"
+                    ],
                     "maxim_ore": 0
                 }
             },
@@ -38,8 +47,14 @@
                     "maxim_ore": 0
                 },
                 "miercuri": {
-                    "intervale": [],
-                    "maxim_ore": 0
+                    "intervale": [
+                        "14:00 - 16:00",
+                        "14:00 - 16:00",
+                        null,
+                        null,
+                        null
+                    ],
+                    "maxim_ore": 5
                 },
                 "joi": {
                     "intervale": [],
