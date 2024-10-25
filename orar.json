@@ -2,7 +2,7 @@
     {
         "zi": 1,
         "interval": 1,
-        "profesor": "Popescu",
+        "profesor": null,
         "sala": null,
         "grupa": null,
         "materie": null,
