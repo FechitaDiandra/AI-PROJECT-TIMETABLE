@@ -1,0 +1,30 @@
+import json
+
+def genereaza_orar_gol():
+    zile = ["Luni", "Marti", "Miercuri", "Joi", "Vineri"]
+    intervale = 6  # 6 intervale pe zi
+
+    orar_gol = []
+
+    # Creăm orarul gol pentru fiecare zi și interval
+    for zi in range(1, len(zile) + 1):
+        for interval in range(1, intervale + 1):
+            orar_gol.append({
+                "zi": zi,
+                "interval": interval,
+                "profesor": None,
+                "sala": None,
+                "grupa": None,
+                "materie": None,
+                "tip": None
+            })
+
+    return orar_gol
+
+def salveaza_orar_gol(orar_gol, nume_fisier="orar_gol.json"):
+    with open(nume_fisier, "w") as f:
+        json.dump(orar_gol, f, indent=4)
+
+# Generăm orarul gol și îl salvăm într-un fișier JSON
+orar_gol = genereaza_orar_gol()
+salveaza_orar_gol(orar_gol)

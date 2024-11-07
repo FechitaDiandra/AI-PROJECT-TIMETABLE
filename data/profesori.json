@@ -1,0 +1,87 @@
+{
+    "profesor_logica": {
+        "nume": "Prof. Ionescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_matematica": {
+        "nume": "Prof. Popescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_proiectare_algoritmi": {
+        "nume": "Prof. Marinescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_po": {
+        "nume": "Prof. Georgescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_sisteme_operare": {
+        "nume": "Prof. Dumitrescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_java": {
+        "nume": "Prof. Constantinescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_tehnologii_web": {
+        "nume": "Prof. Mihailescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_baze_date": {
+        "nume": "Prof. Enescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_algoritmi_genetici": {
+        "nume": "Prof. Iliescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_antreprenoriat": {
+        "nume": "Prof. Bratu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_retele_calculatoare": {
+        "nume": "Prof. Vasilescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_ai": {
+        "nume": "Prof. Andreescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_dotnet": {
+        "nume": "Prof. Cazacu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_machine_learning": {
+        "nume": "Prof. Golescu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_a3d": {
+        "nume": "Prof. Barbu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_python": {
+        "nume": "Prof. Ciobanu",
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_securitate_info": {
+        "nume": "Prof. Dumitriu",
+        "intervale_preferate": [],
+        "restrictii": []
+    }
+}

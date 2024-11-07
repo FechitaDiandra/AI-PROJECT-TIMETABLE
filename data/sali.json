@@ -1,0 +1,287 @@
+{
+    "C1": {
+        "capacitate": 4,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C2": {
+        "capacitate": 4,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C102": {
+        "capacitate": 2,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C202": {
+        "capacitate": 2,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C123": {
+        "capacitate": 3,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C301": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C302": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C303": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C304": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C305": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C306": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C307": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C308": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C309": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    },
+    "C310": {
+        "capacitate": 1,
+        "disponibilitate": {
+            "zile": [
+                "luni",
+                "marti",
+                "miercuri",
+                "joi",
+                "vineri"
+            ],
+            "intervale": [
+                "8:00-10:00",
+                "10:00-12:00",
+                "12:00-14:00",
+                "14:00-16:00",
+                "16:00-18:00"
+            ]
+        }
+    }
+}

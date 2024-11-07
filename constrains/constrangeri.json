@@ -1,0 +1,21 @@
+{
+    "constrangeri": [
+      {
+        "tip": "hard",
+        "nivel": "local",
+        "entitate": "profesor",
+        "nume": "Prof. Popescu",
+        "zi": "Luni",
+        "interval_orar": "8:00-10:00",
+        "detalii": "Disponibil doar în acest interval"
+      },
+      {
+        "tip": "soft",
+        "nivel": "global",
+        "entitate": "orar",
+        "interval_orar": "18:00-20:00",
+        "detalii": "Evitat de preferință"
+      }
+    ]
+  }
+  
