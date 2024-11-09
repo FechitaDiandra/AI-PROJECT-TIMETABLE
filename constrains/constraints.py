@@ -1,93 +1,38 @@
-import json
-import random
 
-# Datele de intrare
-profesori = ["Prof. Popescu", "Prof. Ionescu", "Prof. Vasile", "Prof. Maria"]
-grupe = ["Grupa A", "Grupa B", "Grupa C", "Grupa D"]
-materii = ["Matematica", "Fizica", "Informatica", "Chimie"]
-sali = ["Sala 1", "Sala 2", "Sala 3", "Sala 4"]
+def unicitate_activitati(orar):
+    for activitate1, detalii1 in orar.items():
+        for activitate2, detalii2 in orar.items():
+            if activitate1 != activitate2 and detalii1 == detalii2:
+                return False  # Incalcare unicitate
+    return True  # Respectam unicitatea
 
-# Citim constrângerile
-fisier_constrangeri = '/Users/denisroca/Downloads/Facultate/AI-PROJECT-TIMETABLE/constrains/constrangeri.json'
 
-def citeste_constrangeri(fisier_constrangeri):
-    try:
-        with open(fisier_constrangeri, 'r') as f:
-            date = json.load(f)
-        return date["constrangeri"]
-    except json.JSONDecodeError as e:
-        print("Eroare la citirea JSON:", e)
-        return []
-    except FileNotFoundError:
-        print("Fișierul nu a fost găsit:", fisier_constrangeri)
-        return []
+def ordine_cursuri_seminare(orar, activitati):
+    for activitate, detalii in activitati.items():
+        if detalii["tip"] == "curs":
+            for activitate2, detalii2 in activitati.items():
+                if detalii2["tip"] in ["seminar", "laborator"]:
+                    if orar[activitate][1] > orar[activitate2][1]:  # Comparam intervalele
+                        return False  # Incalcare ordine
+    return True  # Respectam ordinea
 
-def clasifica_constrangeri(constrangeri):
-    hard = []
-    soft = []
-    for c in constrangeri:
-        if c["tip"] == "hard":
-            hard.append(c)
-        elif c["tip"] == "soft":
-            soft.append(c)
-    return hard, soft
 
-# Toate zilele săptămânii și intervalele
-zile = ["Luni", "Marți", "Miercuri", "Joi", "Vineri"]
-intervale = ["8:00-10:00", "10:00-12:00", "12:00-14:00", "14:00-16:00", "16:00-18:00", "18:00-20:00"]
+def limite_zilnice_profesori(orar, profesori, max_activitati_pe_zi=3):
+    activitati_per_zile = {zi: {profesor: 0 for profesor in profesori} for zi in zile}
+    for activitate, detalii in orar.items():
+        zi, interval, sala = detalii
+        profesor = activitati[activitate]["profesor"]
+        activitati_per_zile[zi][profesor] += 1
+    for zi in activitati_per_zile.values():
+        for profesor, numar_activitati in zi.items():
+            if numar_activitati > max_activitati_pe_zi:
+                return False  # Incalcare limita de activitati pe zi
+    return True  # Limita este respectata
 
-# Funcția care verifică constrângerile și alocă profesorilor intervale
-def aplica_constrangeri(hard, soft, zi, interval, profesor=None):
-    for constr in hard:
-        if constr["nivel"] == "local" and constr["entitate"] == "profesor":
-            if profesor == constr["nume"] and zi == constr["zi"] and interval == constr["interval_orar"]:
-                return False  # Interval indisponibil
-        elif constr["nivel"] == "global" and constr["entitate"] == "orar":
-            if interval == constr["interval_orar"]:
-                return False  # Interval indisponibil global
-    for constr in soft:
-        if constr["nivel"] == "global" and constr["interval_orar"] == interval:
-            print("Avertisment: se evită preferabil intervalul soft:", interval)
-    return True  # Interval disponibil
-
-# Generăm orarul
-def genereaza_orar(profesori, grupele, materii, sali, hard, soft):
-    orar = {}
-    for zi in zile:
-        orar[zi] = {}
-        for interval in intervale:
-            # Alegem un profesor, grupă, materie și sală aleatoriu
-            profesor = random.choice(profesori)
-            grupa = random.choice(grupe)
-            materie = random.choice(materii)
-            sala = random.choice(sali)
-
-            # Verificăm dacă intervalul este disponibil
-            if aplica_constrangeri(hard, soft, zi, interval, profesor):
-                orar[zi][interval] = {
-                    "profesor": profesor,
-                    "grupa": grupa,
-                    "materie": materie,
-                    "sala": sala
-                }
-            else:
-                orar[zi][interval] = {
-                    "profesor": "N/A",
-                    "grupa": "N/A",
-                    "materie": "N/A",
-                    "sala": "N/A"
-                }
-    return orar
-
-# Citim constrângerile
-constrangeri = citeste_constrangeri(fisier_constrangeri)
-hard, soft = clasifica_constrangeri(constrangeri)
-
-# Generăm orarul
-orar = genereaza_orar(profesori, grupe, materii, sali, hard, soft)
-
-# Afișăm orarul generat
-for zi, intervale_orar in orar.items():
-    print(f"Orar pentru {zi}:")
-    for interval, detalii in intervale_orar.items():
-        print(f"  {interval}: {detalii}")
+def intervale_interzise_profesori(orar, profesori):
+    for activitate, detalii in orar.items():
+        zi, interval, sala = detalii
+        profesor = activitati[activitate]["profesor"]
+        if zi in profesori[profesor]["restrictii"]:
+            return False  # Incalcare restrictie interval
+    return True  # Restrictiile sunt respectate

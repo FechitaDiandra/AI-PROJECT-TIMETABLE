@@ -1,3 +1,4 @@
+#model
 import json
 
 fisier_constrangeri = '/Users/denisroca/Downloads/Facultate/AI-PROJECT-TIMETABLE/constrains/constrangeri.json'

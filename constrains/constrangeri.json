@@ -4,17 +4,42 @@
         "tip": "hard",
         "nivel": "local",
         "entitate": "profesor",
-        "nume": "Prof. Popescu",
+        "nume": "Prof. Ionescu",
         "zi": "Luni",
-        "interval_orar": "8:00-10:00",
+        "interval_orar": "10:00-14:00",
         "detalii": "Disponibil doar în acest interval"
       },
       {
         "tip": "soft",
+        "nivel": "local",
+        "entitate": "profesor",
+        "nume": "Prof. Popescu",
+        "zi": "Miercuri",
+        "interval_orar": "14:00-16:00",
+        "detalii": "Ar prefera să nu aibă cursuri în acest interval"
+      },
+      {
+        "tip": "hard",
         "nivel": "global",
         "entitate": "orar",
-        "interval_orar": "18:00-20:00",
-        "detalii": "Evitat de preferință"
+        "interval_orar": "08:00-10:00",
+        "detalii": "Este imposibil să existe cursuri în acest interval"
+      },
+      {
+        "tip": "soft",
+        "nivel": "global",
+        "entitate": "sala",
+        "nume": "Sala X",
+        "interval_orar": "08:00-12:00",
+        "detalii": "Preferabil să nu fie folosită pentru laboratoare de matematică"
+      },
+      {
+        "tip": "hard",
+        "nivel": "local",
+        "entitate": "sala",
+        "nume": "Sala A",
+        "interval_orar": "14:00-16:00",
+        "detalii": "Este rezervată exclusiv pentru seminarii de management"
       }
     ]
   }
