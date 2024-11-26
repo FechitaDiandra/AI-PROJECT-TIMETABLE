@@ -17,7 +17,7 @@ def ordine_cursuri_seminare(orar, activitati):
     return True  # Respectam ordinea
 
 
-def limite_zilnice_profesori(orar, profesori, max_activitati_pe_zi=3):
+def limite_zilnice_profesori(orar, profesori, zile, activitati, max_activitati_pe_zi=3):
     activitati_per_zile = {zi: {profesor: 0 for profesor in profesori} for zi in zile}
     for activitate, detalii in orar.items():
         zi, interval, sala = detalii
@@ -29,10 +29,16 @@ def limite_zilnice_profesori(orar, profesori, max_activitati_pe_zi=3):
                 return False  # Incalcare limita de activitati pe zi
     return True  # Limita este respectata
 
-def intervale_interzise_profesori(orar, profesori):
+def intervale_interzise_profesori(orar, profesori, activitati, hard):
     for activitate, detalii in orar.items():
         zi, interval, sala = detalii
         profesor = activitati[activitate]["profesor"]
-        if zi in profesori[profesor]["restrictii"]:
-            return False  # Incalcare restrictie interval
-    return True  # Restrictiile sunt respectate
+        for constr in hard:
+            if constr.get("nivel") == "local" and constr.get("entitate") == "profesor":
+                if (
+                    profesor == constr.get("nume") and
+                    zi == constr.get("zi") and
+                    interval == constr.get("interval_orar")
+                ):
+                    return False  # Interval interzis
+    return True  # Intervalele sunt respectate

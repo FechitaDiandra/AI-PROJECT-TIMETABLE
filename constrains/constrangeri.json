@@ -1,46 +1,89 @@
 {
     "constrangeri": [
-      {
-        "tip": "hard",
-        "nivel": "local",
-        "entitate": "profesor",
-        "nume": "Prof. Ionescu",
-        "zi": "Luni",
-        "interval_orar": "10:00-14:00",
-        "detalii": "Disponibil doar în acest interval"
-      },
-      {
-        "tip": "soft",
-        "nivel": "local",
-        "entitate": "profesor",
-        "nume": "Prof. Popescu",
-        "zi": "Miercuri",
-        "interval_orar": "14:00-16:00",
-        "detalii": "Ar prefera să nu aibă cursuri în acest interval"
-      },
-      {
-        "tip": "hard",
-        "nivel": "global",
-        "entitate": "orar",
-        "interval_orar": "08:00-10:00",
-        "detalii": "Este imposibil să existe cursuri în acest interval"
-      },
-      {
-        "tip": "soft",
-        "nivel": "global",
-        "entitate": "sala",
-        "nume": "Sala X",
-        "interval_orar": "08:00-12:00",
-        "detalii": "Preferabil să nu fie folosită pentru laboratoare de matematică"
-      },
-      {
-        "tip": "hard",
-        "nivel": "local",
-        "entitate": "sala",
-        "nume": "Sala A",
-        "interval_orar": "14:00-16:00",
-        "detalii": "Este rezervată exclusiv pentru seminarii de management"
-      }
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Ionescu",
+            "zi": "Luni",
+            "interval_orar": "10:00-12:00",
+            "detalii": "Indisponibil din cauza \u0219edin\u021bei departamentale."
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "sala",
+            "nume": "Sala C123",
+            "zi": "Mar\u021bi",
+            "interval_orar": "12:00-14:00",
+            "detalii": "Sal\u0103 rezervat\u0103 pentru seminar special."
+        },
+        {
+            "tip": "hard",
+            "nivel": "global",
+            "entitate": "orar",
+            "interval_orar": "08:00-10:00",
+            "detalii": "Interval blocat pentru activit\u0103\u021bi administrative."
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "sala",
+            "nume": "Sala C1",
+            "zi": "Miercuri",
+            "interval_orar": "14:00-16:00",
+            "detalii": "Laboratorul de matematic\u0103 avansat\u0103."
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Popescu",
+            "zi": "Joi",
+            "interval_orar": "16:00-18:00",
+            "detalii": "Prefer\u0103 s\u0103 nu predea la ore t\u00e2rzii."
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "sala",
+            "nume": "Sala C1",
+            "zi": "Vineri",
+            "interval_orar": "10:00-12:00",
+            "detalii": "Preferin\u021b\u0103 pentru alte activit\u0103\u021bi dec\u00e2t cursuri."
+        },
+        {
+            "tip": "soft",
+            "nivel": "global",
+            "entitate": "orar",
+            "interval_orar": "14:00-16:00",
+            "detalii": "Preferin\u021b\u0103 global\u0103: Evit\u0103 cursuri \u00een acest interval."
+        },
+        {
+            "tip": "soft",
+            "nivel": "global",
+            "entitate": "sala",
+            "nume": "Sala 309",
+            "interval_orar": "08:00-10:00",
+            "detalii": "Preferabil s\u0103 nu fie folosit\u0103 pentru laboratoare de chimie."
+        },
+        {
+            "tip": "hard",
+            "nivel": "global",
+            "entitate": "sala",
+            "nume": "C2",
+            "zi": "Luni",
+            "interval_orar": "08:00-10:00",
+            "detalii": "Indisponibil pentru cursuri"
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Dumitriu",
+            "zi": "Vineri",
+            "interval_orar": "12:00-16:00",
+            "detalii": "Indisponibil predare"
+        }
     ]
-  }
-  
+}
