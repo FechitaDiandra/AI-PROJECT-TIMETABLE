@@ -1,0 +1,2001 @@
+{
+    "semestru_1": {
+        "Logica_1_A_curs": {
+            "materie": "Logica",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "8:00-10:00",
+            "sala": "C1",
+            "profesor": "Prof. Albu",
+            "grupele": [
+                "1A1",
+                "1A2",
+                "1A3"
+            ]
+        },
+        "Matematica_1_A_curs": {
+            "materie": "Matematica",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Vasile",
+            "grupele": [
+                "1A1",
+                "1A2",
+                "1A3"
+            ]
+        },
+        "1A1": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C1",
+                "profesor": "Prof. Albu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C1",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "1A2": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C2",
+                "profesor": "Prof. Albu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C2",
+                "profesor": "Prof. Popescu"
+            }
+        ],
+        "1A3": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C123",
+                "profesor": "Prof. Ionescu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C123",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "Logica_1_B_curs": {
+            "materie": "Logica",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "16:00-18:00",
+            "sala": "C1",
+            "profesor": "Prof. Albu",
+            "grupele": [
+                "1B1",
+                "1B2",
+                "1B3"
+            ]
+        },
+        "Matematica_1_B_curs": {
+            "materie": "Matematica",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "8:00-10:00",
+            "sala": "C1",
+            "profesor": "Prof. Popescu",
+            "grupele": [
+                "1B1",
+                "1B2",
+                "1B3"
+            ]
+        },
+        "1B1": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C2",
+                "profesor": "Prof. Albu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C2",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "1B2": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C123",
+                "profesor": "Prof. Ionescu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C123",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "1B3": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C102",
+                "profesor": "Prof. Albu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C102",
+                "profesor": "Prof. Popescu"
+            }
+        ],
+        "Logica_1_E_curs": {
+            "materie": "Logica",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Ionescu",
+            "grupele": [
+                "1E1",
+                "1E2",
+                "1E3"
+            ]
+        },
+        "Matematica_1_E_curs": {
+            "materie": "Matematica",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C1",
+            "profesor": "Prof. Popescu",
+            "grupele": [
+                "1E1",
+                "1E2",
+                "1E3"
+            ]
+        },
+        "1E1": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C202",
+                "profesor": "Prof. Ionescu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C202",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "1E2": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C301",
+                "profesor": "Prof. Ionescu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C301",
+                "profesor": "Prof. Vasile"
+            }
+        ],
+        "1E3": [
+            {
+                "materie": "Logica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C302",
+                "profesor": "Prof. Ionescu"
+            },
+            {
+                "materie": "Matematica",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C302",
+                "profesor": "Prof. Popescu"
+            }
+        ],
+        "Java_2_A_curs": {
+            "materie": "Java",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "16:00-18:00",
+            "sala": "C2",
+            "profesor": "Prof. Radu",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "Tehnologii Web_2_A_curs": {
+            "materie": "Tehnologii Web",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "8:00-10:00",
+            "sala": "C2",
+            "profesor": "Prof. Zaharia",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "Re\u021bele de Calculatoare_2_A_curs": {
+            "materie": "Re\u021bele de Calculatoare",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C2",
+            "profesor": "Prof. Vasilescu",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "2A1": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C303",
+                "profesor": "Prof. Radu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C303",
+                "profesor": "Prof. Zaharia"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C102",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2A2": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C304",
+                "profesor": "Prof. Constantinescu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C304",
+                "profesor": "Prof. Mihailescu"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C202",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2A3": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C305",
+                "profesor": "Prof. Constantinescu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C305",
+                "profesor": "Prof. Zaharia"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C301",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "Java_2_B_curs": {
+            "materie": "Java",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C2",
+            "profesor": "Prof. Constantinescu",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "Tehnologii Web_2_B_curs": {
+            "materie": "Tehnologii Web",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "14:00-16:00",
+            "sala": "C1",
+            "profesor": "Prof. Mihailescu",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "Re\u021bele de Calculatoare_2_B_curs": {
+            "materie": "Re\u021bele de Calculatoare",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "16:00-18:00",
+            "sala": "C1",
+            "profesor": "Prof. Vasilescu",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "2B1": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C306",
+                "profesor": "Prof. Constantinescu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C306",
+                "profesor": "Prof. Mihailescu"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C302",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2B2": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C307",
+                "profesor": "Prof. Radu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C307",
+                "profesor": "Prof. Zaharia"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C303",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2B3": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C308",
+                "profesor": "Prof. Radu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C308",
+                "profesor": "Prof. Mihailescu"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C304",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "Java_2_E_curs": {
+            "materie": "Java",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "8:00-10:00",
+            "sala": "C1",
+            "profesor": "Prof. Constantinescu",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "Tehnologii Web_2_E_curs": {
+            "materie": "Tehnologii Web",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Zaharia",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "Re\u021bele de Calculatoare_2_E_curs": {
+            "materie": "Re\u021bele de Calculatoare",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "12:00-14:00",
+            "sala": "C1",
+            "profesor": "Prof. Vasilescu",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "2E1": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C309",
+                "profesor": "Prof. Radu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C309",
+                "profesor": "Prof. Zaharia"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C305",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2E2": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C310",
+                "profesor": "Prof. Constantinescu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C310",
+                "profesor": "Prof. Mihailescu"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C306",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "2E3": [
+            {
+                "materie": "Java",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C307",
+                "profesor": "Prof. Constantinescu"
+            },
+            {
+                "materie": "Tehnologii Web",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C102",
+                "profesor": "Prof. Mihailescu"
+            },
+            {
+                "materie": "Re\u021bele de Calculatoare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C123",
+                "profesor": "Prof. Vasilescu"
+            }
+        ],
+        "Inteligen\u021b\u0103 Artificial\u0103_3_A_curs": {
+            "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "8:00-10:00",
+            "sala": "C123",
+            "profesor": "Prof. Andreescu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "A3D_3_A_curs": {
+            "materie": "A3D",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C123",
+            "profesor": "Prof. Barbu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "Python_3_A_curs": {
+            "materie": "Python",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C123",
+            "profesor": "Prof. Ciobanu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "3A1": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C308",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C202",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C102",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3A2": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C309",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C301",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C202",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3A3": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C310",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C302",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C301",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "Inteligen\u021b\u0103 Artificial\u0103_3_B_curs": {
+            "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "14:00-16:00",
+            "sala": "C2",
+            "profesor": "Prof. Andreescu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "A3D_3_B_curs": {
+            "materie": "A3D",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "16:00-18:00",
+            "sala": "C2",
+            "profesor": "Prof. Barbu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "Python_3_B_curs": {
+            "materie": "Python",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "8:00-10:00",
+            "sala": "C2",
+            "profesor": "Prof. Ciobanu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "3B1": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C303",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C302",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C102",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3B2": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C304",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C303",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C202",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3B3": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C305",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C304",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C301",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "Inteligen\u021b\u0103 Artificial\u0103_3_E_curs": {
+            "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "10:00-12:00",
+            "sala": "C2",
+            "profesor": "Prof. Andreescu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "A3D_3_E_curs": {
+            "materie": "A3D",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "12:00-14:00",
+            "sala": "C2",
+            "profesor": "Prof. Barbu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "Python_3_E_curs": {
+            "materie": "Python",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "14:00-16:00",
+            "sala": "C1",
+            "profesor": "Prof. Ciobanu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "3E1": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C306",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C305",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C302",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3E2": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C307",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C306",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C303",
+                "profesor": "Prof. Ciobanu"
+            }
+        ],
+        "3E3": [
+            {
+                "materie": "Inteligen\u021b\u0103 Artificial\u0103",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C308",
+                "profesor": "Prof. Andreescu"
+            },
+            {
+                "materie": "A3D",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C307",
+                "profesor": "Prof. Barbu"
+            },
+            {
+                "materie": "Python",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C304",
+                "profesor": "Prof. Ciobanu"
+            }
+        ]
+    },
+    "semestru_2": {
+        "Proiectarea Algoritmilor_1_A_curs": {
+            "materie": "Proiectarea Algoritmilor",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "8:00-10:00",
+            "sala": "C1",
+            "profesor": "Prof. Marinescu",
+            "grupele": [
+                "1A1",
+                "1A2",
+                "1A3"
+            ]
+        },
+        "Proiectare Orientat\u0103 pe Obiect_1_A_curs": {
+            "materie": "Proiectare Orientat\u0103 pe Obiect",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Georgescu",
+            "grupele": [
+                "1A1",
+                "1A2",
+                "1A3"
+            ]
+        },
+        "Sisteme de Operare_1_A_curs": {
+            "materie": "Sisteme de Operare",
+            "tip": "curs",
+            "zi": "luni",
+            "interval": "12:00-14:00",
+            "sala": "C1",
+            "profesor": "Prof. Dumitrescu",
+            "grupele": [
+                "1A1",
+                "1A2",
+                "1A3"
+            ]
+        },
+        "1A1": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C1",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C1",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C1",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1A2": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C2",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C2",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C2",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1A3": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C123",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C123",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C123",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "Proiectarea Algoritmilor_1_B_curs": {
+            "materie": "Proiectarea Algoritmilor",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Marinescu",
+            "grupele": [
+                "1B1",
+                "1B2",
+                "1B3"
+            ]
+        },
+        "Proiectare Orientat\u0103 pe Obiect_1_B_curs": {
+            "materie": "Proiectare Orientat\u0103 pe Obiect",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C1",
+            "profesor": "Prof. Georgescu",
+            "grupele": [
+                "1B1",
+                "1B2",
+                "1B3"
+            ]
+        },
+        "Sisteme de Operare_1_B_curs": {
+            "materie": "Sisteme de Operare",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "14:00-16:00",
+            "sala": "C1",
+            "profesor": "Prof. Dumitrescu",
+            "grupele": [
+                "1B1",
+                "1B2",
+                "1B3"
+            ]
+        },
+        "1B1": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C2",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C2",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C2",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1B2": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C123",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C123",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C123",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1B3": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C102",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C102",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C102",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "Proiectarea Algoritmilor_1_E_curs": {
+            "materie": "Proiectarea Algoritmilor",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "16:00-18:00",
+            "sala": "C1",
+            "profesor": "Prof. Marinescu",
+            "grupele": [
+                "1E1",
+                "1E2",
+                "1E3"
+            ]
+        },
+        "Proiectare Orientat\u0103 pe Obiect_1_E_curs": {
+            "materie": "Proiectare Orientat\u0103 pe Obiect",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "8:00-10:00",
+            "sala": "C1",
+            "profesor": "Prof. Georgescu",
+            "grupele": [
+                "1E1",
+                "1E2",
+                "1E3"
+            ]
+        },
+        "Sisteme de Operare_1_E_curs": {
+            "materie": "Sisteme de Operare",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "10:00-12:00",
+            "sala": "C1",
+            "profesor": "Prof. Dumitrescu",
+            "grupele": [
+                "1E1",
+                "1E2",
+                "1E3"
+            ]
+        },
+        "1E1": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C202",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C202",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C202",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1E2": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C301",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C301",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C301",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "1E3": [
+            {
+                "materie": "Proiectarea Algoritmilor",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C302",
+                "profesor": "Prof. Marinescu"
+            },
+            {
+                "materie": "Proiectare Orientat\u0103 pe Obiect",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C302",
+                "profesor": "Prof. Georgescu"
+            },
+            {
+                "materie": "Sisteme de Operare",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C302",
+                "profesor": "Prof. Dumitrescu"
+            }
+        ],
+        "Baze de Date_2_A_curs": {
+            "materie": "Baze de Date",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C2",
+            "profesor": "Prof. Enescu",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "Algoritmi Genetici_2_A_curs": {
+            "materie": "Algoritmi Genetici",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C2",
+            "profesor": "Prof. Lungu",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "Antreprenoriat_2_A_curs": {
+            "materie": "Antreprenoriat",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "14:00-16:00",
+            "sala": "C2",
+            "profesor": "Prof. Bratu",
+            "grupele": [
+                "2A1",
+                "2A2",
+                "2A3"
+            ]
+        },
+        "2A1": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C303",
+                "profesor": "Prof. Mihai"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C303",
+                "profesor": "Prof. Lungu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C303",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2A2": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C304",
+                "profesor": "Prof. Enescu"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C304",
+                "profesor": "Prof. Lungu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C304",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2A3": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C305",
+                "profesor": "Prof. Enescu"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C305",
+                "profesor": "Prof. Iliescu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C305",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "Baze de Date_2_B_curs": {
+            "materie": "Baze de Date",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "16:00-18:00",
+            "sala": "C2",
+            "profesor": "Prof. Mihai",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "Algoritmi Genetici_2_B_curs": {
+            "materie": "Algoritmi Genetici",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "8:00-10:00",
+            "sala": "C2",
+            "profesor": "Prof. Lungu",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "Antreprenoriat_2_B_curs": {
+            "materie": "Antreprenoriat",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "10:00-12:00",
+            "sala": "C2",
+            "profesor": "Prof. Bratu",
+            "grupele": [
+                "2B1",
+                "2B2",
+                "2B3"
+            ]
+        },
+        "2B1": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C306",
+                "profesor": "Prof. Enescu"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C306",
+                "profesor": "Prof. Iliescu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C306",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2B2": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C307",
+                "profesor": "Prof. Mihai"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C307",
+                "profesor": "Prof. Iliescu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C307",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2B3": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C308",
+                "profesor": "Prof. Enescu"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C308",
+                "profesor": "Prof. Iliescu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C308",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "Baze de Date_2_E_curs": {
+            "materie": "Baze de Date",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "12:00-14:00",
+            "sala": "C1",
+            "profesor": "Prof. Mihai",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "Algoritmi Genetici_2_E_curs": {
+            "materie": "Algoritmi Genetici",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "14:00-16:00",
+            "sala": "C1",
+            "profesor": "Prof. Iliescu",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "Antreprenoriat_2_E_curs": {
+            "materie": "Antreprenoriat",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "16:00-18:00",
+            "sala": "C1",
+            "profesor": "Prof. Bratu",
+            "grupele": [
+                "2E1",
+                "2E2",
+                "2E3"
+            ]
+        },
+        "2E1": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C309",
+                "profesor": "Prof. Mihai"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C309",
+                "profesor": "Prof. Lungu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C309",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2E2": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "8:00-10:00",
+                "sala": "C310",
+                "profesor": "Prof. Mihai"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "10:00-12:00",
+                "sala": "C310",
+                "profesor": "Prof. Lungu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "12:00-14:00",
+                "sala": "C310",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "2E3": [
+            {
+                "materie": "Baze de Date",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C102",
+                "profesor": "Prof. Mihai"
+            },
+            {
+                "materie": "Algoritmi Genetici",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C102",
+                "profesor": "Prof. Iliescu"
+            },
+            {
+                "materie": "Antreprenoriat",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C102",
+                "profesor": "Prof. Bratu"
+            }
+        ],
+        "DotNet_3_A_curs": {
+            "materie": "DotNet",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "10:00-12:00",
+            "sala": "C123",
+            "profesor": "Prof. Cazacu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "Machine Learning_3_A_curs": {
+            "materie": "Machine Learning",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "12:00-14:00",
+            "sala": "C123",
+            "profesor": "Prof. Golescu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "Securitatea Informa\u021biei_3_A_curs": {
+            "materie": "Securitatea Informa\u021biei",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "14:00-16:00",
+            "sala": "C123",
+            "profesor": "Prof. Dumitriu",
+            "grupele": [
+                "3A1",
+                "3A2",
+                "3A3"
+            ]
+        },
+        "3A1": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C202",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C202",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C202",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3A2": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C301",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C301",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C301",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3A3": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C302",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C302",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C302",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "DotNet_3_B_curs": {
+            "materie": "DotNet",
+            "tip": "curs",
+            "zi": "marti",
+            "interval": "16:00-18:00",
+            "sala": "C123",
+            "profesor": "Prof. Cazacu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "Machine Learning_3_B_curs": {
+            "materie": "Machine Learning",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "8:00-10:00",
+            "sala": "C123",
+            "profesor": "Prof. Golescu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "Securitatea Informa\u021biei_3_B_curs": {
+            "materie": "Securitatea Informa\u021biei",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "10:00-12:00",
+            "sala": "C123",
+            "profesor": "Prof. Dumitriu",
+            "grupele": [
+                "3B1",
+                "3B2",
+                "3B3"
+            ]
+        },
+        "3B1": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C303",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C303",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C303",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3B2": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C304",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C304",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C304",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3B3": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C305",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C305",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C305",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "DotNet_3_E_curs": {
+            "materie": "DotNet",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "12:00-14:00",
+            "sala": "C2",
+            "profesor": "Prof. Cazacu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "Machine Learning_3_E_curs": {
+            "materie": "Machine Learning",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "14:00-16:00",
+            "sala": "C2",
+            "profesor": "Prof. Golescu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "Securitatea Informa\u021biei_3_E_curs": {
+            "materie": "Securitatea Informa\u021biei",
+            "tip": "curs",
+            "zi": "miercuri",
+            "interval": "16:00-18:00",
+            "sala": "C2",
+            "profesor": "Prof. Dumitriu",
+            "grupele": [
+                "3E1",
+                "3E2",
+                "3E3"
+            ]
+        },
+        "3E1": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C306",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C306",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C306",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3E2": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C307",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C307",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C307",
+                "profesor": "Prof. Dumitriu"
+            }
+        ],
+        "3E3": [
+            {
+                "materie": "DotNet",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "14:00-16:00",
+                "sala": "C308",
+                "profesor": "Prof. Cazacu"
+            },
+            {
+                "materie": "Machine Learning",
+                "tip": "laborator",
+                "zi": "luni",
+                "interval": "16:00-18:00",
+                "sala": "C308",
+                "profesor": "Prof. Golescu"
+            },
+            {
+                "materie": "Securitatea Informa\u021biei",
+                "tip": "laborator",
+                "zi": "marti",
+                "interval": "8:00-10:00",
+                "sala": "C308",
+                "profesor": "Prof. Dumitriu"
+            }
+        ]
+    }
+}

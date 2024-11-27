@@ -1,86 +1,139 @@
 {
-    "profesor_logica": {
+    "profesor_logica_1": {
         "nume": "Prof. Ionescu",
+        "materii": ["Logica"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_matematica": {
+    "profesor_logica_2": {
+        "nume": "Prof. Albu",
+        "materii": ["Logica"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_matematica_1": {
         "nume": "Prof. Popescu",
+        "materii": ["Matematica"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_proiectare_algoritmi": {
+    "profesor_matematica_2": {
+        "nume": "Prof. Vasile",
+        "materii": ["Matematica"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_proiectare_algoritmi_1": {
         "nume": "Prof. Marinescu",
+        "materii": ["Proiectarea Algoritmilor"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_po": {
+    "profesor_po_1": {
         "nume": "Prof. Georgescu",
+        "materii": ["Proiectare Orientată pe Obiect"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_sisteme_operare": {
+    "profesor_sisteme_operare_1": {
         "nume": "Prof. Dumitrescu",
+        "materii": ["Sisteme de Operare"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_java": {
+    "profesor_java_1": {
         "nume": "Prof. Constantinescu",
+        "materii": ["Java"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_tehnologii_web": {
+    "profesor_java_2": {
+        "nume": "Prof. Radu",
+        "materii": ["Java"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_tehnologii_web_1": {
         "nume": "Prof. Mihailescu",
+        "materii": ["Tehnologii Web"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_baze_date": {
+    "profesor_tehnologii_web_2": {
+        "nume": "Prof. Zaharia",
+        "materii": ["Tehnologii Web"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_baze_date_1": {
         "nume": "Prof. Enescu",
+        "materii": ["Baze de Date"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_algoritmi_genetici": {
+    "profesor_baze_date_2": {
+        "nume": "Prof. Mihai",
+        "materii": ["Baze de Date"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_algoritmi_genetici_1": {
         "nume": "Prof. Iliescu",
+        "materii": ["Algoritmi Genetici"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_antreprenoriat": {
+    "profesor_algoritmi_genetici_2": {
+        "nume": "Prof. Lungu",
+        "materii": ["Algoritmi Genetici"],
+        "intervale_preferate": [],
+        "restrictii": []
+    },
+    "profesor_antreprenoriat_1": {
         "nume": "Prof. Bratu",
+        "materii": ["Antreprenoriat"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_retele_calculatoare": {
+    "profesor_retele_calculatoare_1": {
         "nume": "Prof. Vasilescu",
+        "materii": ["Rețele de Calculatoare"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_ai": {
+    "profesor_ai_1": {
         "nume": "Prof. Andreescu",
+        "materii": ["Inteligență Artificială"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_dotnet": {
+    "profesor_dotnet_1": {
         "nume": "Prof. Cazacu",
+        "materii": ["DotNet"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_machine_learning": {
+    "profesor_machine_learning_1": {
         "nume": "Prof. Golescu",
+        "materii": ["Machine Learning"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_a3d": {
+    "profesor_a3d_1": {
         "nume": "Prof. Barbu",
+        "materii": ["A3D"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_python": {
+    "profesor_python_1": {
         "nume": "Prof. Ciobanu",
+        "materii": ["Python"],
         "intervale_preferate": [],
         "restrictii": []
     },
-    "profesor_securitate_info": {
+    "profesor_securitate_info_1": {
         "nume": "Prof. Dumitriu",
+        "materii": ["Securitatea Informației"],
         "intervale_preferate": [],
         "restrictii": []
     }

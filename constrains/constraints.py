@@ -42,3 +42,35 @@ def intervale_interzise_profesori(orar, profesori, activitati, hard):
                 ):
                     return False  # Interval interzis
     return True  # Intervalele sunt respectate
+
+def verifica_constrangere_arc(constrangere, activitate, valoare):
+    if constrangere["entitate"] == "profesor":
+        if activitate["profesor"] == constrangere.get("nume"):
+            if constrangere.get("zi") and constrangere.get("interval_orar"):
+                zi_restrictionata = constrangere["zi"]
+                interval_orar = constrangere["interval_orar"].split("-")
+                ora_inceput = int(interval_orar[0].split(":")[0])
+                ora_sfarsit = int(interval_orar[1].split(":")[0])
+
+                return not (valoare["zi"] == zi_restrictionata and 
+                            ora_inceput <= valoare["interval"] <= ora_sfarsit)
+
+    if constrangere["entitate"] == "sala":
+        if valoare["sala"] == constrangere.get("nume"):
+            if constrangere.get("zi") and constrangere.get("interval_orar"):
+                zi_restrictionata = constrangere["zi"]
+                interval_orar = constrangere["interval_orar"].split("-")
+                ora_inceput = int(interval_orar[0].split(":")[0])
+                ora_sfarsit = int(interval_orar[1].split(":")[0])
+
+                return not (valoare["zi"] == zi_restrictionata and 
+                            ora_inceput <= valoare["interval"] <= ora_sfarsit)
+
+    return True
+
+def respecta_constrangeri(orar, activitate, valoare, constrangeri):
+    for constrangere in constrangeri:
+        if constrangere["tip"] == "hard":
+            if not verifica_constrangere_arc(constrangere, activitate, valoare):
+                return False
+    return True
