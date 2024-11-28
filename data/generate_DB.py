@@ -85,7 +85,7 @@ def save_to_json(filename, data):
     with open(f"{filename}.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
-save_to_json("data/profesori", profesori)
-save_to_json("data/activitati", activitati)
-save_to_json("data/sali", sali)
-save_to_json("data/grupe", grupe)
+save_to_json("profesori", profesori)
+save_to_json("activitati", activitati)
+save_to_json("sali", sali)
+save_to_json("grupe", grupe)
