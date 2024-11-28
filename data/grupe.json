@@ -1,137 +1,47 @@
 {
     "1A1": {
         "an": 1,
-        "seminar": "A",
+        "semian": "A",
         "numar_grupa": 1
-    },
-    "1A2": {
-        "an": 1,
-        "seminar": "A",
-        "numar_grupa": 2
-    },
-    "1A3": {
-        "an": 1,
-        "seminar": "A",
-        "numar_grupa": 3
     },
     "1B1": {
         "an": 1,
-        "seminar": "B",
+        "semian": "B",
         "numar_grupa": 1
-    },
-    "1B2": {
-        "an": 1,
-        "seminar": "B",
-        "numar_grupa": 2
-    },
-    "1B3": {
-        "an": 1,
-        "seminar": "B",
-        "numar_grupa": 3
     },
     "1E1": {
         "an": 1,
-        "seminar": "E",
+        "semian": "E",
         "numar_grupa": 1
-    },
-    "1E2": {
-        "an": 1,
-        "seminar": "E",
-        "numar_grupa": 2
-    },
-    "1E3": {
-        "an": 1,
-        "seminar": "E",
-        "numar_grupa": 3
     },
     "2A1": {
         "an": 2,
-        "seminar": "A",
+        "semian": "A",
         "numar_grupa": 1
-    },
-    "2A2": {
-        "an": 2,
-        "seminar": "A",
-        "numar_grupa": 2
-    },
-    "2A3": {
-        "an": 2,
-        "seminar": "A",
-        "numar_grupa": 3
     },
     "2B1": {
         "an": 2,
-        "seminar": "B",
+        "semian": "B",
         "numar_grupa": 1
-    },
-    "2B2": {
-        "an": 2,
-        "seminar": "B",
-        "numar_grupa": 2
-    },
-    "2B3": {
-        "an": 2,
-        "seminar": "B",
-        "numar_grupa": 3
     },
     "2E1": {
         "an": 2,
-        "seminar": "E",
+        "semian": "E",
         "numar_grupa": 1
-    },
-    "2E2": {
-        "an": 2,
-        "seminar": "E",
-        "numar_grupa": 2
-    },
-    "2E3": {
-        "an": 2,
-        "seminar": "E",
-        "numar_grupa": 3
     },
     "3A1": {
         "an": 3,
-        "seminar": "A",
+        "semian": "A",
         "numar_grupa": 1
-    },
-    "3A2": {
-        "an": 3,
-        "seminar": "A",
-        "numar_grupa": 2
-    },
-    "3A3": {
-        "an": 3,
-        "seminar": "A",
-        "numar_grupa": 3
     },
     "3B1": {
         "an": 3,
-        "seminar": "B",
+        "semian": "B",
         "numar_grupa": 1
-    },
-    "3B2": {
-        "an": 3,
-        "seminar": "B",
-        "numar_grupa": 2
-    },
-    "3B3": {
-        "an": 3,
-        "seminar": "B",
-        "numar_grupa": 3
     },
     "3E1": {
         "an": 3,
-        "seminar": "E",
+        "semian": "E",
         "numar_grupa": 1
-    },
-    "3E2": {
-        "an": 3,
-        "seminar": "E",
-        "numar_grupa": 2
-    },
-    "3E3": {
-        "an": 3,
-        "seminar": "E",
-        "numar_grupa": 3
     }
 }

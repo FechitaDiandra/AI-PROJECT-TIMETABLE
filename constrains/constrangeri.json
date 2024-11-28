@@ -4,75 +4,68 @@
             "tip": "hard",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Ionescu",
-            "zi": "Luni",
+            "nume": "Ionescu",
+            "zi": "luni",
             "interval_orar": "10:00-12:00",
-            "detalii": "Indisponibil din cauza \u0219edin\u021bei departamentale."
+            "detalii": "Indisponibil din cauza ședinței departamentale."
         },
         {
             "tip": "hard",
             "nivel": "local",
             "entitate": "sala",
-            "nume": "Sala C123",
-            "zi": "Mar\u021bi",
+            "nume": "C302",
+            "zi": "marti",
             "interval_orar": "12:00-14:00",
-            "detalii": "Sal\u0103 rezervat\u0103 pentru seminar special."
+            "detalii": "Sală rezervată pentru seminar special."
         },
         {
             "tip": "hard",
             "nivel": "global",
             "entitate": "orar",
             "interval_orar": "08:00-10:00",
-            "detalii": "Interval blocat pentru activit\u0103\u021bi administrative."
+            "detalii": "Interval blocat pentru activități administrative."
         },
         {
             "tip": "hard",
             "nivel": "local",
             "entitate": "sala",
-            "nume": "Sala C1",
-            "zi": "Miercuri",
+            "nume": "C2",
+            "zi": "miercuri",
             "interval_orar": "14:00-16:00",
-            "detalii": "Laboratorul de matematic\u0103 avansat\u0103."
+            "detalii": "Laboratorul de matematică avansată."
         },
         {
             "tip": "soft",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Popescu",
-            "zi": "Joi",
+            "nume": "Popescu",
+            "zi": "joi",
             "interval_orar": "16:00-18:00",
-            "detalii": "Prefer\u0103 s\u0103 nu predea la ore t\u00e2rzii."
+            "detalii": "Preferă să nu predea la ore târzii."
         },
         {
             "tip": "soft",
             "nivel": "local",
             "entitate": "sala",
-            "nume": "Sala C1",
-            "zi": "Vineri",
+            "nume": "C2",
+            "zi": "vineri",
             "interval_orar": "10:00-12:00",
-            "detalii": "Preferin\u021b\u0103 pentru alte activit\u0103\u021bi dec\u00e2t cursuri."
-        },
-        {
-            "tip": "soft",
-            "nivel": "global",
-            "entitate": "orar",
-            "interval_orar": "14:00-16:00",
-            "detalii": "Preferin\u021b\u0103 global\u0103: Evit\u0103 cursuri \u00een acest interval."
+            "detalii": "Preferință pentru alte activități decât cursuri."
         },
         {
             "tip": "soft",
             "nivel": "global",
             "entitate": "sala",
-            "nume": "Sala 309",
+            "nume": "304",
             "interval_orar": "08:00-10:00",
-            "detalii": "Preferabil s\u0103 nu fie folosit\u0103 pentru laboratoare de chimie."
+            "detalii": "Preferabil să nu fie folosită pentru laboratoare de chimie."
         },
         {
             "tip": "hard",
             "nivel": "global",
             "entitate": "sala",
             "nume": "C2",
-            "zi": "Luni",
+            "zi": "luni",
             "interval_orar": "08:00-10:00",
             "detalii": "Indisponibil pentru cursuri"
         },
@@ -80,8 +73,8 @@
             "tip": "hard",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Dumitriu",
-            "zi": "Vineri",
+            "nume": "Dumitriu",
+            "zi": "vineri",
             "interval_orar": "12:00-16:00",
             "detalii": "Indisponibil predare"
         },
@@ -89,64 +82,102 @@
             "tip": "soft",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Albu",
-            "zi": null,
+            "nume": "Albu",
             "interval_orar": "08:00-12:00",
-            "detalii": "Prefer sa am ore dupa ora 12:00."
+            "detalii": "Prefer să am ore după ora 12:00."
         },
         {
             "tip": "soft",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Popescu",
-            "zi": null,
+            "nume": "Popescu",
             "interval_orar": "16:00-20:00",
-            "detalii": "Doresc sa am ore dimineata."
+            "detalii": "Doresc să am ore dimineața."
         },
         {
             "tip": "soft",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Radu",
-            "zi": "Vineri",
+            "nume": "Radu",
+            "zi": "vineri",
             "interval_orar": "10:00-16:00",
-            "detalii": "Nu doreste ore"
+            "detalii": "Nu dorește ore"
         },
         {
             "tip": "hard",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Enescu",
-            "zi": "Marti",
+            "nume": "Enescu",
+            "zi": "marți",
             "interval_orar": "10:00-12:00",
-            "detalii": "Tine un curs la o alta facultate."
+            "detalii": "Ține un curs la o altă facultate."
         },
         {
             "tip": "hard",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Mihailescu",
-            "zi": "Joi",
+            "nume": "Mihailescu",
+            "zi": "joi",
             "interval_orar": "08:00-16:00",
-            "detalii": "Are ore la alta facultate"
+            "detalii": "Are ore la altă facultate"
         },
         {
             "tip": "hard",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Albu",
-            "zi": null,
+            "nume": "Albu",
             "interval_orar": "10:00-12:00",
-            "detalii": null
+            "detalii": "Indisponibil predare"
         },
         {
             "tip": "soft",
             "nivel": "local",
             "entitate": "profesor",
-            "nume": "Prof. Albu",
+            "nume": "Albu",
             "zi": "joi",
             "interval_orar": "08:00-18:00",
-            "detalii": "Nu doreste ore"
+            "detalii": "Nu dorește ore"
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Dumitriu",
+            "zi": "vineri",
+            "interval_orar": "12:00-14:00",
+            "detalii": "Indisponibil predare"
+        },
+        {
+            "tip": "hard",
+            "nivel": "global",
+            "entitate": "orar",
+            "interval_orar": "18:00-20:00",
+            "detalii": "Orele după ora 18:00 sunt interzise"
+        },
+        {
+            "tip": "soft",
+            "nivel": "global",
+            "entitate": "orar",
+            "interval_orar": "14:00-16:00",
+            "detalii": "Evită programarea cursurilor în acest interval"
+        },        
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "sala",
+            "nume": "C1",
+            "zi": "miercuri",
+            "interval_orar": "12:00-14:00",
+            "detalii": "Sală rezervată pentru conferință"
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "sala",
+            "nume": "C302",
+            "zi": "joi",
+            "interval_orar": "08:00-10:00",
+            "detalii": "Capacitate insuficientă pentru cursul Python"
         }
     ]
 }

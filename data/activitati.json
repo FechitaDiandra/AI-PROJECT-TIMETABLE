@@ -2,239 +2,205 @@
     {
         "tip": "curs",
         "materie": "Logica",
-        "profesor": "profesor_logica",
-        "an": 1,
-        "semestru": 1
+        "profesor": "Ionescu",
+        "an": 1
     },
     {
         "tip": "laborator",
         "materie": "Logica",
-        "profesor": "profesor_logica",
-        "an": 1,
-        "semestru": 1
+        "profesor": "Ionescu",
+        "an": 1
     },
     {
         "tip": "curs",
         "materie": "Matematica",
-        "profesor": "profesor_matematica",
-        "an": 1,
-        "semestru": 1
+        "profesor": "Popescu",
+        "an": 1
     },
     {
         "tip": "laborator",
         "materie": "Matematica",
-        "profesor": "profesor_matematica",
-        "an": 1,
-        "semestru": 1
+        "profesor": "Popescu",
+        "an": 1
     },
     {
         "tip": "curs",
-        "materie": "Proiectarea Algoritmilor",
-        "profesor": "profesor_proiectare_algoritmi",
-        "an": 1,
-        "semestru": 2
+        "materie": "Proiectarea_Algoritmilor",
+        "profesor": "Marinescu",
+        "an": 1
     },
     {
         "tip": "laborator",
-        "materie": "Proiectarea Algoritmilor",
-        "profesor": "profesor_proiectare_algoritmi",
-        "an": 1,
-        "semestru": 2
+        "materie": "Proiectarea_Algoritmilor",
+        "profesor": "Marinescu",
+        "an": 1
     },
     {
         "tip": "curs",
-        "materie": "Proiectare Orientată pe Obiect",
-        "profesor": "profesor_po",
-        "an": 1,
-        "semestru": 2
+        "materie": "Proiectare_Orientata_pe_Obiect",
+        "profesor": "Georgescu",
+        "an": 1
     },
     {
         "tip": "laborator",
-        "materie": "Proiectare Orientată pe Obiect",
-        "profesor": "profesor_po",
-        "an": 1,
-        "semestru": 2
+        "materie": "Proiectare_Orientata_pe_Obiect",
+        "profesor": "Georgescu",
+        "an": 1
     },
     {
         "tip": "curs",
-        "materie": "Sisteme de Operare",
-        "profesor": "profesor_sisteme_operare",
-        "an": 1,
-        "semestru": 2
+        "materie": "Sisteme_de_Operare",
+        "profesor": "Dumitrescu",
+        "an": 1
     },
     {
         "tip": "laborator",
-        "materie": "Sisteme de Operare",
-        "profesor": "profesor_sisteme_operare",
-        "an": 1,
-        "semestru": 2
+        "materie": "Sisteme_de_Operare",
+        "profesor": "Dumitrescu",
+        "an": 1
     },
     {
         "tip": "curs",
         "materie": "Java",
-        "profesor": "profesor_java",
-        "an": 2,
-        "semestru": 1
+        "profesor": "Constantinescu",
+        "an": 2
     },
     {
         "tip": "laborator",
         "materie": "Java",
-        "profesor": "profesor_java",
-        "an": 2,
-        "semestru": 1
+        "profesor": "Constantinescu",
+        "an": 2
     },
     {
         "tip": "curs",
-        "materie": "Tehnologii Web",
-        "profesor": "profesor_tehnologii_web",
-        "an": 2,
-        "semestru": 1
+        "materie": "Tehnologii_Web",
+        "profesor": "Mihailescu",
+        "an": 2
     },
     {
         "tip": "laborator",
-        "materie": "Tehnologii Web",
-        "profesor": "profesor_tehnologii_web",
-        "an": 2,
-        "semestru": 1
+        "materie": "Tehnologii_Web",
+        "profesor": "Mihailescu",
+        "an": 2
     },
     {
         "tip": "curs",
-        "materie": "Baze de Date",
-        "profesor": "profesor_baze_date",
-        "an": 2,
-        "semestru": 2
+        "materie": "Baze_de_Date",
+        "profesor": "Enescu",
+        "an": 2
     },
     {
         "tip": "laborator",
-        "materie": "Baze de Date",
-        "profesor": "profesor_baze_date",
-        "an": 2,
-        "semestru": 2
+        "materie": "Baze_de_Date",
+        "profesor": "Enescu",
+        "an": 2
     },
     {
         "tip": "curs",
-        "materie": "Algoritmi Genetici",
-        "profesor": "profesor_algoritmi_genetici",
-        "an": 2,
-        "semestru": 2
+        "materie": "Algoritmi_Genetici",
+        "profesor": "Iliescu",
+        "an": 2
     },
     {
         "tip": "laborator",
-        "materie": "Algoritmi Genetici",
-        "profesor": "profesor_algoritmi_genetici",
-        "an": 2,
-        "semestru": 2
+        "materie": "Algoritmi_Genetici",
+        "profesor": "Iliescu",
+        "an": 2
     },
     {
         "tip": "curs",
         "materie": "Antreprenoriat",
-        "profesor": "profesor_antreprenoriat",
-        "an": 2,
-        "semestru": 2
+        "profesor": "Bratu",
+        "an": 2
     },
     {
         "tip": "laborator",
         "materie": "Antreprenoriat",
-        "profesor": "profesor_antreprenoriat",
-        "an": 2,
-        "semestru": 2
+        "profesor": "Bratu",
+        "an": 2
     },
     {
         "tip": "curs",
-        "materie": "Rețele de Calculatoare",
-        "profesor": "profesor_retele_calculatoare",
-        "an": 2,
-        "semestru": 1
+        "materie": "Retele_de_Calculatoare",
+        "profesor": "Vasilescu",
+        "an": 2
     },
     {
         "tip": "laborator",
-        "materie": "Rețele de Calculatoare",
-        "profesor": "profesor_retele_calculatoare",
-        "an": 2,
-        "semestru": 1
+        "materie": "Retele_de_Calculatoare",
+        "profesor": "Vasilescu",
+        "an": 2
     },
     {
         "tip": "curs",
-        "materie": "Inteligență Artificială",
-        "profesor": "profesor_ai",
-        "an": 3,
-        "semestru": 1
+        "materie": "Inteligenta_Artificiala",
+        "profesor": "Andreescu",
+        "an": 3
     },
     {
         "tip": "laborator",
-        "materie": "Inteligență Artificială",
-        "profesor": "profesor_ai",
-        "an": 3,
-        "semestru": 1
+        "materie": "Inteligenta_Artificiala",
+        "profesor": "Andreescu",
+        "an": 3
     },
     {
         "tip": "curs",
         "materie": "DotNet",
-        "profesor": "profesor_dotnet",
-        "an": 3,
-        "semestru": 2
+        "profesor": "Cazacu",
+        "an": 3
     },
     {
         "tip": "laborator",
         "materie": "DotNet",
-        "profesor": "profesor_dotnet",
-        "an": 3,
-        "semestru": 2
+        "profesor": "Cazacu",
+        "an": 3
     },
     {
         "tip": "curs",
-        "materie": "Machine Learning",
-        "profesor": "profesor_machine_learning",
-        "an": 3,
-        "semestru": 2
+        "materie": "Machine_Learning",
+        "profesor": "Golescu",
+        "an": 3
     },
     {
         "tip": "laborator",
-        "materie": "Machine Learning",
-        "profesor": "profesor_machine_learning",
-        "an": 3,
-        "semestru": 2
+        "materie": "Machine_Learning",
+        "profesor": "Golescu",
+        "an": 3
     },
     {
         "tip": "curs",
         "materie": "A3D",
-        "profesor": "profesor_a3d",
-        "an": 3,
-        "semestru": 1
+        "profesor": "Barbu",
+        "an": 3
     },
     {
         "tip": "laborator",
         "materie": "A3D",
-        "profesor": "profesor_a3d",
-        "an": 3,
-        "semestru": 1
+        "profesor": "Barbu",
+        "an": 3
     },
     {
         "tip": "curs",
         "materie": "Python",
-        "profesor": "profesor_python",
-        "an": 3,
-        "semestru": 1
+        "profesor": "Ciobanu",
+        "an": 3
     },
     {
         "tip": "laborator",
         "materie": "Python",
-        "profesor": "profesor_python",
-        "an": 3,
-        "semestru": 1
+        "profesor": "Ciobanu",
+        "an": 3
     },
     {
         "tip": "curs",
-        "materie": "Securitatea Informației",
-        "profesor": "profesor_securitate_info",
-        "an": 3,
-        "semestru": 2
+        "materie": "Securitatea_Informatiei",
+        "profesor": "Dumitriu",
+        "an": 3
     },
     {
         "tip": "laborator",
-        "materie": "Securitatea Informației",
-        "profesor": "profesor_securitate_info",
-        "an": 3,
-        "semestru": 2
+        "materie": "Securitatea_Informatiei",
+        "profesor": "Dumitriu",
+        "an": 3
     }
 ]
