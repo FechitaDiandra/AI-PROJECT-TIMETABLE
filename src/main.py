@@ -1,155 +1,195 @@
-import re
 import json
 
-# sinonime pentru zile
-zile_sinonime = {
-    "luni": ["lunea"],
-    "marti": ["martia"],
-    "miercuri": ["miercurea"],
-    "joi": ["joia"],
-    "vineri": ["vinerea"]
-}
+# functia pentru citirea fisierelor json
+def citeste_fisier_json(fisier):
+    try:
+        with open(fisier, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Eroare la citirea fisierului {fisier}: {e}")
+        return {}
 
-# tokenizez fraza
-def tokenize(fraza):
-    return fraza.split()
+# functia pentru salvarea constrangerilor in fisier
+def salveaza_constrangeri(fisier, constrangeri):
+    try:
+        with open(fisier, 'w') as f:
+            json.dump({"constrangeri": constrangeri}, f, indent=4)
+        print(f"Constrangerile au fost salvate in {fisier}.")
+    except Exception as e:
+        print(f"Eroare la salvarea constrangerilor: {e}")
 
-# extrag numele profesorului
-def extrage_profesor(fraza):
-    pattern = r"Profesorul\s+([A-Za-z]+\s+[A-Za-z]+)"
-    match = re.search(pattern, fraza, re.IGNORECASE)
-    if match:
-        return match.group(1)
-    return None
-
-# extrag zilele si orele, inclusiv inainte si dupa ora
-def extrage_zile_ore(fraza):
-    zile = []
-    ora = None
-    tip_constrangere = None  # tipul constrangerii: "inainte de" sau "dupa"
-    
-    # identific zilele din fraza
-    for zi, sinonime in zile_sinonime.items():
-        for sinonim in sinonime + [zi]:
-            if sinonim in fraza:
-                zile.append(zi)
-
-    # verific expresia "in ziua de"
-    match_in_ziua_de = re.search(r"in ziua de\s+([A-Za-z]+)", fraza, re.IGNORECASE)
-    if match_in_ziua_de:
-        zi = match_in_ziua_de.group(1).lower()
-        if zi in zile_sinonime:
-            zile = [zi]  # setez zilele ca fiind doar acea zi
-
-            # verific daca nu este specificata o ora
-            ora_dupa_match = re.search(r"dupa ora (\d{1,2}):(\d{2})", fraza)
-            ora_inainte_match = re.search(r"inainte de ora (\d{1,2}):(\d{2})", fraza)
-            
-            if not ora_dupa_match and not ora_inainte_match:
-                # daca nu este specificata o ora, setez tipul de constrangere
-                tip_constrangere = "toata ziua"
-
-    # identific ora si tipul de constrangere
-    ora_dupa_match = re.search(r"dupa ora (\d{1,2}):(\d{2})", fraza)
-    ora_inainte_match = re.search(r"inainte de ora (\d{1,2}):(\d{2})", fraza)
-    
-    if ora_dupa_match:
-        ora = f"{ora_dupa_match.group(1)}:{ora_dupa_match.group(2)}"
-        tip_constrangere = "dupa"
-    elif ora_inainte_match:
-        ora = f"{ora_inainte_match.group(1)}:{ora_inainte_match.group(2)}"
-        tip_constrangere = "inainte"
-
-    return zile, ora, tip_constrangere
-
-# determin constrangerea generala
-def determina_constrangere_generala(zile):
-    if not zile:
-        return "constrangerea se aplica pe toata saptamana"
-    return zile
-
-# verific daca profesorul nu poate preda
-def verifica_constrangere_negativa(fraza, zile):
-    # caut cuvintele cheie
-    for zi in zile:
-        # caut expresii care indica negarea predarii in ziua respectiva
-        if re.search(rf"\bnu\b.*?\bpredea\b.*?\b{zi}\b", fraza) or re.search(rf"\bnu\b.*?\bvrea\b.*?\bpredea\b.*?\b{zi}\b", fraza):
-            return False
-        
-        # caut formulări alternative
-        if re.search(rf"\bnu\b.*?\bsă\b.*?\bpredea\b.*?\bdoar\b.*?\b{zi}\b", fraza):
-            return False
-
-    return True
-
-# afisez meniul
-def afiseaza_meniu():
-    print("1. Citire din fisier")
-    print("2. Citire de la tastatura")
-    print("3. Iesire")
-    return input("Alege o optiune: ")
-
-# functie principala
-def main():
+# functia pentru adaugarea constrangerilor de la prompt
+def adauga_constrangeri_la_prompt(constrangeri):
+    print("Introduceti constrangerile noi (lasati campurile goale pentru a opri):")
     while True:
-        optiune = afiseaza_meniu()
-        
-        if optiune == '1':
-            # citire din fisier
-            try:
-                with open('constrangeri_profesori.json', 'r') as f:
-                    profesor_data = json.load(f)  # incarc datele din fisier
-
-                # verific tip de date
-                if isinstance(profesor_data, list):  # verific daca datele sunt o lista
-                    for profesor in profesor_data:
-                        # ma asigur ca fiecare element este un dictionar
-                        if isinstance(profesor, dict):
-                            print(f"Profesor: {profesor['profesor']}, Zi: {profesor['zi']}, Interval: {profesor['interval']}, Preferinta: {profesor['preferinta']}")
-                        else:
-                            print("elementul nu este un dictionar:", profesor)
-                else:
-                    print("datele nu sunt intr-un format corect. Se asteapta o lista.")
-
-            except json.JSONDecodeError as e:
-                print(f"eroare la decodarea JSON: {e}")
-            except FileNotFoundError:
-                print("fisierul nu a fost gasit.")
-
-        elif optiune == '2':
-            # citire de la tastatura
-            fraza = input("Introduceti fraza: ")
-
-            # tokenizare si extragere informatii
-            tokeni = tokenize(fraza)
-            profesor = extrage_profesor(fraza)
-            zile, ora, tip_constrangere = extrage_zile_ore(fraza)
-            zile_constrangere = determina_constrangere_generala(zile)
-            poate_preda = verifica_constrangere_negativa(fraza, zile)
-
-            # afisez rezultatele
-            print("Profesor:", profesor)
-            if isinstance(zile_constrangere, str):
-                print(zile_constrangere)
-            else:
-                if tip_constrangere:
-                    if tip_constrangere == "toata ziua":
-                        print(f"Constrangere: se aplica toata ziua")
-                    else:
-                        print(f"Constrangere: {tip_constrangere} ora {ora}")
-                    print("Zile disponibile:", zile)
-                    print("Poate preda:", poate_preda)
-                else:
-                    print("Nu a fost gasita o constrangere de timp specificata.")
-
-        elif optiune == '3':
-            # ies din bucla
-            print("Ies din program.")
+        tip = input("Tip (hard/soft): ").strip().lower()
+        if not tip:
             break
+        nivel = input("Nivel (local/global): ").strip().lower()
+        entitate = input("Entitate (profesor/sala/orar): ").strip().lower()
+        nume = input("Nume entitate (optional): ").strip()
+        zi = input("Zi (optional): ").strip()
+        interval_orar = input("Interval orar (hh:mm-hh:mm): ").strip()
+        detalii = input("Detalii (optional): ").strip()
+        
+        constrangere = {
+            "tip": tip,
+            "nivel": nivel,
+            "entitate": entitate,
+            "nume": nume if nume else None,
+            "zi": zi if zi else None,
+            "interval_orar": interval_orar,
+            "detalii": detalii if detalii else None
+        }
+        constrangeri.append(constrangere)
+        print("Constrangerea a fost adaugata.")
+    return constrangeri
 
-        else:
-            print("Optiune invalida. Te rog sa alegi 1, 2 sau 3.")
+# functia pentru clasificarea constrangerilor in hard si soft
+def clasifica_constrangeri(constrangeri):
+    hard = [c for c in constrangeri if c["tip"] == "hard"]
+    soft = [c for c in constrangeri if c["tip"] == "soft"]
+    return hard, soft
 
-# apelarea functiei principale
-if __name__ == "__main__":
-    main()
+# functia pentru verificarea suprapunerii intervalelor
+def suprapunere_intervale(interval1, interval2):
+    start1, end1 = map(lambda x: int(x.replace(':', '')), interval1.split('-'))
+    start2, end2 = map(lambda x: int(x.replace(':', '')), interval2.split('-'))
+    return not (end1 <= start2 or end2 <= start1)
+
+# functia pentru verificarea salilor disponibile
+def verifica_sali(sali, zi, interval, constrangeri_hard, constrangeri_soft):
+    sali_disponibile = []
+    for nume_sala, detalii in sali.items():
+        disponibil = True  # presupunem ca sala este disponibila
+
+        # verificam daca ziua este in lista de zile disponibile pentru sala
+        if zi.lower() not in map(str.lower, detalii["disponibilitate"]["zile"]):
+            disponibil = False
+
+        # verificam daca intervalul este in lista de intervale disponibile pentru sala
+        elif interval not in detalii["disponibilitate"]["intervale"]:
+            disponibil = False
+
+        # aplicam constrangerile hard si soft pentru sala
+        for constr in constrangeri_hard + constrangeri_soft:
+            if constr["entitate"] == "sala" and constr.get("nume") == nume_sala:
+                if (constr.get("zi") is None or zi.lower() == constr.get("zi", "").lower()) and suprapunere_intervale(interval, constr["interval_orar"]):
+                    if constr["tip"] == "hard":
+                        disponibil = False
+                    elif constr["tip"] == "soft":
+                        # preferintele soft nu schimba disponibilitatea, doar emit avertismente
+                        pass
+
+        # adaugam sala in lista disponibila daca nu exista restrictii
+        if disponibil:
+            sali_disponibile.append(nume_sala)
+
+    return sali_disponibile
+
+def safe_str_lower(value):
+    return value.strip().lower() if value else ''
+
+def aplica_constrangeri(hard, soft, zi, interval, profesor=None, sala=None):
+    mesaj_final = []
+    disponibil = True
+
+    # aplica constrangerile hard
+    for constr in hard:
+        if constr["nivel"].lower() == "local":
+            # verificam restrictiile pentru profesori
+            if constr["entitate"].lower() == "profesor" and profesor:
+                if (safe_str_lower(profesor) == safe_str_lower(constr.get("nume")) and
+                        (constr.get("zi") is None or safe_str_lower(zi) == safe_str_lower(constr.get("zi"))) and
+                        suprapunere_intervale(interval, constr["interval_orar"])):
+                    mesaj_final.append(f"[HARD] Profesorul {profesor} este indisponibil in intervalul {interval} pe {zi}.")
+                    disponibil = False
+                    break  # oprire daca o regula hard este incalcata
+
+            # verificam restrictiile pentru sali
+            if constr["entitate"].lower() == "sala" and sala:
+                if (safe_str_lower(sala) == safe_str_lower(constr.get("nume")) and
+                        (constr.get("zi") is None or safe_str_lower(zi) == safe_str_lower(constr.get("zi"))) and
+                        suprapunere_intervale(interval, constr["interval_orar"])):
+                    mesaj_final.append(f"[HARD] Sala {sala} este rezervata pe {zi} in intervalul {interval}.")
+                    disponibil = False
+                    break  # oprire daca o regula hard este incalcata
+
+        elif constr["nivel"].lower() == "global":
+            if suprapunere_intervale(interval, constr["interval_orar"]):
+                mesaj_final.append(f"[HARD] Intervalul {interval} este global indisponibil pe {zi}.")
+                disponibil = False
+                break  # oprire daca o regula hard este incalcata
+
+    # daca exista constrangeri hard care invalideaza, iesim direct
+    if not disponibil:
+        return disponibil, mesaj_final
+
+    # aplica constrangerile soft (doar daca nu exista conflicte hard)
+    for constr in soft:
+        if constr["nivel"].lower() == "local":
+            # preferinte pentru profesori
+            if constr["entitate"].lower() == "profesor" and profesor:
+                if (safe_str_lower(profesor) == safe_str_lower(constr.get("nume")) and
+                        (constr.get("zi") is None or safe_str_lower(zi) == safe_str_lower(constr.get("zi"))) and
+                        suprapunere_intervale(interval, constr["interval_orar"])):
+                    mesaj_final.append(f"[SOFT] Avertisment: {profesor} prefera sa nu aiba cursuri in intervalul {interval} pe {zi}.")
+
+            # preferinte pentru sali
+            if constr["entitate"].lower() == "sala" and sala:
+                if (safe_str_lower(sala) == safe_str_lower(constr.get("nume")) and
+                        (constr.get("zi") is None or safe_str_lower(zi) == safe_str_lower(constr.get("zi"))) and
+                        suprapunere_intervale(interval, constr["interval_orar"])):
+                    mesaj_final.append(f"[SOFT] Avertisment: Sala {sala} prefera sa nu fie utilizata in intervalul {interval}.")
+
+        elif constr["nivel"].lower() == "global":
+            if suprapunere_intervale(interval, constr["interval_orar"]):
+                mesaj_final.append(f"[SOFT] Preferinta globala: Evita cursuri in intervalul {interval} pe {zi}.")
+
+    return disponibil, list(set(mesaj_final))  # eliminam duplicatele
+
+# citire date
+fisier_constrangeri = 'constrains/constrangeri.json'
+fisier_sali = 'data/sali.json'
+fisier_profesori = 'data/profesori.json'
+
+# citire date pentru constrangeri
+optiune_constrangeri = input("Doriti sa cititi constrangerile dintr-un fisier sau sa le introduceti manual? (fisier/prompt): ").strip().lower()
+if optiune_constrangeri == "fisier":
+    constrangeri_actualizate = citeste_fisier_json(fisier_constrangeri).get("constrangeri", [])
+elif optiune_constrangeri == "prompt":
+    constrangeri_existente = citeste_fisier_json(fisier_constrangeri).get("constrangeri", [])
+    constrangeri_actualizate = adauga_constrangeri_la_prompt(constrangeri_existente)
+    salveaza_constrangeri(fisier_constrangeri, constrangeri_actualizate)
+else:
+    print("Optiune invalida. Se vor folosi constrangerile existente din fisier.")
+    constrangeri_actualizate = citeste_fisier_json(fisier_constrangeri).get("constrangeri", [])
+
+sali = citeste_fisier_json(fisier_sali)
+profesori = citeste_fisier_json(fisier_profesori)
+
+# clasificarea constrangerilor
+hard, soft = clasifica_constrangeri(constrangeri_actualizate)
+
+# verificarea constrangerilor
+zile = ["Luni", "Marti", "Miercuri", "Joi", "Vineri"]
+intervale = ["8:00-10:00", "10:00-12:00", "12:00-14:00", "14:00-16:00", "16:00-18:00", "18:00-20:00"]
+
+for profesor_key, profesor_data in profesori.items():
+    profesor_nume = profesor_data["nume"]
+    print(f"\n=== Verificari pentru {profesor_nume} ===")
+    for zi in zile:
+        print(f"\n-- Ziua {zi} --")
+        for interval in intervale:
+            sali_disponibile = verifica_sali(sali, zi, interval, hard, soft)
+            sala = sali_disponibile[0] if sali_disponibile else None
+            disponibil, mesaje = aplica_constrangeri(hard, soft, zi, interval, profesor_nume, sala)
+
+            if disponibil:
+                print(f"[DISPONIBIL] Interval {interval} pe {zi} este disponibil pentru {profesor_nume} in sala {sala if sala else 'Nicio sala'}.")
+                for mesaj in mesaje:
+                    print(f"  - {mesaj}")
+            else:
+                print(f"[INDISPONIBIL] Interval {interval} pe {zi} este indisponibil pentru {profesor_nume} in sala {sala if sala else 'Nicio sala'}:")
+                for mesaj in mesaje:
+                    print(f"  - {mesaj}")

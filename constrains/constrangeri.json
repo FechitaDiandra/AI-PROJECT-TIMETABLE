@@ -84,6 +84,69 @@
             "zi": "Vineri",
             "interval_orar": "12:00-16:00",
             "detalii": "Indisponibil predare"
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Albu",
+            "zi": null,
+            "interval_orar": "08:00-12:00",
+            "detalii": "Prefer sa am ore dupa ora 12:00."
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Popescu",
+            "zi": null,
+            "interval_orar": "16:00-20:00",
+            "detalii": "Doresc sa am ore dimineata."
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Radu",
+            "zi": "Vineri",
+            "interval_orar": "10:00-16:00",
+            "detalii": "Nu doreste ore"
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Enescu",
+            "zi": "Marti",
+            "interval_orar": "10:00-12:00",
+            "detalii": "Tine un curs la o alta facultate."
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Mihailescu",
+            "zi": "Joi",
+            "interval_orar": "08:00-16:00",
+            "detalii": "Are ore la alta facultate"
+        },
+        {
+            "tip": "hard",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Albu",
+            "zi": null,
+            "interval_orar": "10:00-12:00",
+            "detalii": null
+        },
+        {
+            "tip": "soft",
+            "nivel": "local",
+            "entitate": "profesor",
+            "nume": "Prof. Albu",
+            "zi": "joi",
+            "interval_orar": "08:00-18:00",
+            "detalii": "Nu doreste ore"
         }
     ]
 }

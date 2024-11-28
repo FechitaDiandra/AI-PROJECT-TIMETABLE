@@ -51,7 +51,7 @@
                 "zi": "luni",
                 "interval": "12:00-14:00",
                 "sala": "C2",
-                "profesor": "Prof. Albu"
+                "profesor": "Prof. Ionescu"
             },
             {
                 "materie": "Matematica",
@@ -86,7 +86,7 @@
             "zi": "luni",
             "interval": "16:00-18:00",
             "sala": "C1",
-            "profesor": "Prof. Albu",
+            "profesor": "Prof. Ionescu",
             "grupele": [
                 "1B1",
                 "1B2",
@@ -113,7 +113,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C2",
-                "profesor": "Prof. Albu"
+                "profesor": "Prof. Ionescu"
             },
             {
                 "materie": "Matematica",
@@ -139,7 +139,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C123",
-                "profesor": "Prof. Vasile"
+                "profesor": "Prof. Popescu"
             }
         ],
         "1B3": [
@@ -149,7 +149,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C102",
-                "profesor": "Prof. Albu"
+                "profesor": "Prof. Ionescu"
             },
             {
                 "materie": "Matematica",
@@ -166,7 +166,7 @@
             "zi": "marti",
             "interval": "10:00-12:00",
             "sala": "C1",
-            "profesor": "Prof. Ionescu",
+            "profesor": "Prof. Albu",
             "grupele": [
                 "1E1",
                 "1E2",
@@ -179,7 +179,7 @@
             "zi": "marti",
             "interval": "12:00-14:00",
             "sala": "C1",
-            "profesor": "Prof. Popescu",
+            "profesor": "Prof. Vasile",
             "grupele": [
                 "1E1",
                 "1E2",
@@ -211,7 +211,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C301",
-                "profesor": "Prof. Ionescu"
+                "profesor": "Prof. Albu"
             },
             {
                 "materie": "Matematica",
@@ -237,7 +237,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C302",
-                "profesor": "Prof. Popescu"
+                "profesor": "Prof. Vasile"
             }
         ],
         "Java_2_A_curs": {
@@ -286,7 +286,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C303",
-                "profesor": "Prof. Radu"
+                "profesor": "Prof. Constantinescu"
             },
             {
                 "materie": "Tehnologii Web",
@@ -294,7 +294,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C303",
-                "profesor": "Prof. Zaharia"
+                "profesor": "Prof. Mihailescu"
             },
             {
                 "materie": "Re\u021bele de Calculatoare",
@@ -312,7 +312,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C304",
-                "profesor": "Prof. Constantinescu"
+                "profesor": "Prof. Radu"
             },
             {
                 "materie": "Tehnologii Web",
@@ -320,7 +320,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C304",
-                "profesor": "Prof. Mihailescu"
+                "profesor": "Prof. Zaharia"
             },
             {
                 "materie": "Re\u021bele de Calculatoare",
@@ -346,7 +346,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C305",
-                "profesor": "Prof. Zaharia"
+                "profesor": "Prof. Mihailescu"
             },
             {
                 "materie": "Re\u021bele de Calculatoare",
@@ -363,7 +363,7 @@
             "zi": "marti",
             "interval": "12:00-14:00",
             "sala": "C2",
-            "profesor": "Prof. Constantinescu",
+            "profesor": "Prof. Radu",
             "grupele": [
                 "2B1",
                 "2B2",
@@ -376,7 +376,7 @@
             "zi": "marti",
             "interval": "14:00-16:00",
             "sala": "C1",
-            "profesor": "Prof. Mihailescu",
+            "profesor": "Prof. Zaharia",
             "grupele": [
                 "2B1",
                 "2B2",
@@ -429,7 +429,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C307",
-                "profesor": "Prof. Radu"
+                "profesor": "Prof. Constantinescu"
             },
             {
                 "materie": "Tehnologii Web",
@@ -437,7 +437,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C307",
-                "profesor": "Prof. Zaharia"
+                "profesor": "Prof. Mihailescu"
             },
             {
                 "materie": "Re\u021bele de Calculatoare",
@@ -480,7 +480,7 @@
             "zi": "miercuri",
             "interval": "8:00-10:00",
             "sala": "C1",
-            "profesor": "Prof. Constantinescu",
+            "profesor": "Prof. Radu",
             "grupele": [
                 "2E1",
                 "2E2",
@@ -520,7 +520,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C309",
-                "profesor": "Prof. Radu"
+                "profesor": "Prof. Constantinescu"
             },
             {
                 "materie": "Tehnologii Web",
@@ -546,7 +546,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C310",
-                "profesor": "Prof. Constantinescu"
+                "profesor": "Prof. Radu"
             },
             {
                 "materie": "Tehnologii Web",
@@ -1301,7 +1301,7 @@
             "zi": "marti",
             "interval": "10:00-12:00",
             "sala": "C2",
-            "profesor": "Prof. Enescu",
+            "profesor": "Prof. Mihai",
             "grupele": [
                 "2A1",
                 "2A2",
@@ -1314,7 +1314,7 @@
             "zi": "marti",
             "interval": "12:00-14:00",
             "sala": "C2",
-            "profesor": "Prof. Lungu",
+            "profesor": "Prof. Iliescu",
             "grupele": [
                 "2A1",
                 "2A2",
@@ -1341,7 +1341,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C303",
-                "profesor": "Prof. Mihai"
+                "profesor": "Prof. Enescu"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1367,7 +1367,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C304",
-                "profesor": "Prof. Enescu"
+                "profesor": "Prof. Mihai"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1393,7 +1393,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C305",
-                "profesor": "Prof. Enescu"
+                "profesor": "Prof. Mihai"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1401,7 +1401,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C305",
-                "profesor": "Prof. Iliescu"
+                "profesor": "Prof. Lungu"
             },
             {
                 "materie": "Antreprenoriat",
@@ -1418,7 +1418,7 @@
             "zi": "marti",
             "interval": "16:00-18:00",
             "sala": "C2",
-            "profesor": "Prof. Mihai",
+            "profesor": "Prof. Enescu",
             "grupele": [
                 "2B1",
                 "2B2",
@@ -1492,7 +1492,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C307",
-                "profesor": "Prof. Iliescu"
+                "profesor": "Prof. Lungu"
             },
             {
                 "materie": "Antreprenoriat",
@@ -1510,7 +1510,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C308",
-                "profesor": "Prof. Enescu"
+                "profesor": "Prof. Mihai"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1518,7 +1518,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C308",
-                "profesor": "Prof. Iliescu"
+                "profesor": "Prof. Lungu"
             },
             {
                 "materie": "Antreprenoriat",
@@ -1548,7 +1548,7 @@
             "zi": "miercuri",
             "interval": "14:00-16:00",
             "sala": "C1",
-            "profesor": "Prof. Iliescu",
+            "profesor": "Prof. Lungu",
             "grupele": [
                 "2E1",
                 "2E2",
@@ -1575,7 +1575,7 @@
                 "zi": "luni",
                 "interval": "8:00-10:00",
                 "sala": "C309",
-                "profesor": "Prof. Mihai"
+                "profesor": "Prof. Enescu"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1609,7 +1609,7 @@
                 "zi": "luni",
                 "interval": "10:00-12:00",
                 "sala": "C310",
-                "profesor": "Prof. Lungu"
+                "profesor": "Prof. Iliescu"
             },
             {
                 "materie": "Antreprenoriat",
@@ -1627,7 +1627,7 @@
                 "zi": "luni",
                 "interval": "14:00-16:00",
                 "sala": "C102",
-                "profesor": "Prof. Mihai"
+                "profesor": "Prof. Enescu"
             },
             {
                 "materie": "Algoritmi Genetici",
@@ -1635,7 +1635,7 @@
                 "zi": "luni",
                 "interval": "16:00-18:00",
                 "sala": "C102",
-                "profesor": "Prof. Iliescu"
+                "profesor": "Prof. Lungu"
             },
             {
                 "materie": "Antreprenoriat",
