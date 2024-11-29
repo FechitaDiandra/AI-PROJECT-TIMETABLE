@@ -178,40 +178,6 @@
             "zi": "joi",
             "interval_orar": "08:00-10:00",
             "detalii": "Capacitate insuficientă pentru cursul Python"
-        },
-        {
-            "tip": "soft",
-            "nivel": "local",
-            "entitate": "profesor",
-            "nume": "Popescu",
-            "zi": "marti",
-            "detalii": "Prefer să nu am activități programate în această zi."
-        },
-        {
-            "tip": "hard",
-            "nivel": "local",
-            "entitate": "profesor",
-            "nume": "Dumitriu",
-            "zi": "luni",
-            "interval_orar": "14:00-16:00",
-            "detalii": "Indisponibil predare"
-        },
-        {
-            "tip": "hard",
-            "nivel": "local",
-            "entitate": "sala",
-            "nume": "C2",
-            "restrictie": "laborator",
-            "detalii": "Laboratoarele nu sunt permise în sala C2."
-        },
-        {
-            "tip": "hard",
-            "nivel": "local",
-            "entitate": "sala",
-            "nume": "C102",
-            "restrictie": "laborator",
-            "detalii": "Laboratoarele nu sunt permise în sala C102."
-        }            
-     ]      
-   
+        }
+    ]
 }
