@@ -1,7 +1,6 @@
 
 import json
 
-# Load data from JSON files
 with open('constrains/constrangeri.json', 'r') as file:
     constraints = json.load(file)["constrangeri"]
 
@@ -105,12 +104,9 @@ def select_unassigned_variable(variables, assignment, domains):
     unassigned = [var for var in variables if var not in assignment]
     return min(unassigned, key=lambda var: len(domains[var]))
 
-# Solve the CSP problem
-
-# Create unique identifiers for activities
 activity_ids = {idx: activity for idx, activity in enumerate(activities)}
 
-# Define domains for each activity
+
 domains = {
     idx: [{"zi": zi, "interval": interval, "sala": sala}
           for zi in ["luni", "marti", "miercuri", "joi", "vineri"]
@@ -119,7 +115,6 @@ domains = {
     for idx in activity_ids
 }
 
-# Debug: Print initial domains and constraints
 print("Initial domains:")
 for key, value in domains.items():
     print(f"Activity {key}: {value}")
@@ -128,10 +123,8 @@ print("\nConstraints:")
 for constraint in constraints:
     print(constraint)
 
-# Solve the CSP problem using backtracking with arc consistency
 solution = backtracking_with_arc_consistency(list(activity_ids.keys()), domains, constraints, activity_ids)
 
-# Map the solution back to the original activities
 mapped_solution = {
     idx: {
         "activity": activity_ids[idx],
@@ -139,7 +132,6 @@ mapped_solution = {
     } for idx, value in solution.items()
 } if solution else None
 
-# Debug: Print solution or failure message
 if mapped_solution:
     print("\nSolution found:")
     for activity_id, allocation in mapped_solution.items():
@@ -147,9 +139,29 @@ if mapped_solution:
 else:
     print("\nNo solution found. Check constraints and domain definitions.")
 
-# Save the solution to a JSON file
 solution_path = 'final_solution.json'
 with open(solution_path, 'w') as file:
     json.dump(mapped_solution, file, indent=4)
 
 print(f"\nSolution saved to {solution_path}")
+if mapped_solution:
+    schedule = {}
+    for idx, allocation in mapped_solution.items():
+        activity = allocation["activity"]
+        professor = activity["profesor"]
+        if professor not in schedule:
+            schedule[professor] = []
+        schedule[professor].append({
+            "activity": activity,
+            "day": allocation["allocation"]["zi"],
+            "time": allocation["allocation"]["interval"],
+            "room": allocation["allocation"]["sala"]
+        })
+
+    for professor, entries in schedule.items():
+        print(f"Profesor: {professor}")
+        for entry in entries:
+            activity = entry['activity']
+            print(f"  Materie: {activity['materie']}, Tip: {activity['tip']}, Zi: {entry['day']}, Interval: {entry['time']}, Sala: {entry['room']}")
+else:
+    print("Nu s-a găsit nicio soluție.")
