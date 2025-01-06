@@ -1,4 +1,3 @@
-import argparse
 from langdetect import detect
 from collections import Counter
 import string
@@ -25,32 +24,39 @@ def analiza_stilometrica(text):
     return caractere, lungime_cuvinte, frecventa_cuvinte
 
 def main():
-    parser = argparse.ArgumentParser(description='Analiza textului.')
-    parser.add_argument('--file', type=str, help='Calea către fișierul text', required=False)
-    args = parser.parse_args()
+    print("Alegeți opțiunea:")
+    print("1. Citire text din fișier")
+    print("2. Introducere text de la tastatură")
+    optiune = input("Introduceți opțiunea (1 sau 2): ")
 
-    print(f"Argument primit: {args.file}")
-    if not args.file:
-        args.file = 'text.txt'  # Fișier implicit
-        print(f"Se folosește fișierul implicit: {args.file}")
-
-    try:
-        text = citeste_text(args.file)
-        print(f"Text citit cu succes: {text[:100]}...")
-    except FileNotFoundError as e:
-        print(f"Eroare: {e}")
+    if optiune == '1':
+        fisier = input("Introduceți calea către fișierul text: ")
+        try:
+            text = citeste_text(fisier)
+            print(f"Text citit cu succes: {text[:100]}...")
+        except FileNotFoundError as e:
+            print(f"Eroare: {e}")
+            return
+    elif optiune == '2':
+        print("Introduceți textul pentru analiză:")
+        text = input("> ")
+    else:
+        print("Opțiune invalidă. Vă rugăm să alegeți 1 sau 2.")
         return
 
+    # Identificăm limba textului
     limba = identifica_limba(text)
     print(f"Limba detectată: {limba}")
 
+    # Analizăm textul
     caractere, cuvinte, frecventa = analiza_stilometrica(text)
     print(f"Lungime text: {caractere} caractere, {cuvinte} cuvinte.")
     print("Frecvența cuvintelor:")
-    for cuvant, frecventa_cuv in frecventa.most_common(10):  # Primele 10 cuvinte
+    for cuvant, frecventa_cuv in frecventa.most_common(10):  # Primele 10 cuvinte frecvente
         print(f"{cuvant}: {frecventa_cuv}")
 
 if __name__ == "__main__":
     print("Script pornit")
     main()
     print("Script terminat")
+1
