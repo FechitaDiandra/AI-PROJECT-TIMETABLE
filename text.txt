@@ -1,0 +1,1 @@
+Le professeur Dupont souhaite que ses laboratoires d'algorithmes soient programmés le mardi ou le jeudi entre 10h00 et 14h00. En outre, ses cours doivent être programmés avant les laboratoires et ils doivent avoir lieu uniquement dans la salle C303. Les groupes concernés sont 1C1, 1C2 et 1C3.
