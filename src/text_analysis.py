@@ -14,7 +14,12 @@ nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('punkt_tab')
-
+LANGUAGE_MAP = {
+    'en': 'english',
+    'ro': 'romanian',
+    'fr': 'french',
+    'de': 'german',
+}
 # citeste un fisier text
 def citeste_text(fisier):
     print(f"se incearca citirea fisierului: {fisier}")
@@ -42,16 +47,21 @@ def identifica_limba(text):
 
     return detected_language
 
-# obtine lista de stopwords pentru o limba specifica
 def get_stopwords_for_language(limba):
     try:
-        stop_words = set(stopwords.words(limba))
-        if limba == 'ro': 
-            stop_words.update(["printr", "că", "nu", "este", "și", "în", "la", "de", "cu", "pe"])
-        return list(stop_words)
-    except OSError:
-        print(f"stopwords pentru limba {limba} nu sunt disponibile. se utilizeaza limba engleza ca fallback.")
+        mapped_language = LANGUAGE_MAP.get(limba, limba)
+        if mapped_language in stopwords.fileids():
+            stop_words = set(stopwords.words(mapped_language))
+            if mapped_language == 'romanian':
+                stop_words.update(["că", "nu", "este", "și", "în", "la", "de", "cu", "pe"])
+            return list(stop_words)
+        else:
+            print(f"Limbă nesuportată ({limba}). Se utilizează fallback la 'english'.")
+            return list(stopwords.words('english'))
+    except Exception as e:
+        print(f"Eroare la obținerea stopwords pentru {limba}: {e}")
         return list(stopwords.words('english'))
+
 
 # analiza stilometrica
 def analiza_stilometrica(text, limba='english'):
@@ -74,14 +84,13 @@ def analiza_stilometrica(text, limba='english'):
 
 
   
-# genereaza versiuni alternative ale textului
 def genereaza_alternative_text(text, limba):
     stop_words = get_stopwords_for_language(limba)
     cuvinte = word_tokenize(text)
     num_to_replace = max(1, int(len(cuvinte) * 0.2))
     cuvinte_inlocuibile = [cuvant for cuvant in cuvinte if cuvant.lower() not in stop_words and cuvant not in string.punctuation]
 
-    print(f"cuvinte eligibile pentru inlocuire: {cuvinte_inlocuibile}")
+    print(f"Cuvinte eligibile pentru înlocuire: {cuvinte_inlocuibile}")
 
     if not cuvinte_inlocuibile:
         return text
@@ -92,11 +101,13 @@ def genereaza_alternative_text(text, limba):
     for i, cuvant in enumerate(cuvinte):
         if cuvant in cuvinte_de_inlocuit:
             alternative = get_alternative_cuvinte(cuvant)
-            print(f"alternative pentru '{cuvant}': {alternative}")
-            if alternative:
-                text_inlocuit[i] = random.choice(alternative)
+            filtered_alternatives = [alt for alt in alternative if '_' not in alt and len(alt) < 12]
+            print(f"Alternative filtrate pentru '{cuvant}': {filtered_alternatives}")
+            if filtered_alternatives:
+                text_inlocuit[i] = random.choice(filtered_alternatives)
 
     return ' '.join(text_inlocuit)
+
 
 # obtine sinonime, hipernime sau antonime
 def get_alternative_cuvinte(cuvant):
