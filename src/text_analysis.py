@@ -28,7 +28,6 @@ def citeste_text(fisier):
     with open(fisier, 'r', encoding='utf-8') as f:
         return f.read()
 
-# detecteaza limba folosind langdetect
 def identifica_limba(text):
     if len(text) < 20:  # text prea scurt
         print("text prea scurt pentru detectare precisa. repet textul.")
@@ -41,7 +40,7 @@ def identifica_limba(text):
     print(f"detected language: {detected_language}")
 
     # fallback la romana daca limba detectata nu este relevanta
-    if detected_language not in ['ro', 'en', 'fr', 'de']:  # lista limbilor acceptate
+    if detected_language not in ['ro', 'en', 'fr', 'de']:
         print(f"limba detectata ({detected_language}) nu este valida. fallback la 'ro'.")
         return 'ro'
 
@@ -83,33 +82,42 @@ def analiza_stilometrica(text, limba='english'):
         return len(text), 0, Counter(), 0, 0
 
 
-  
 def genereaza_alternative_text(text, limba):
     stop_words = get_stopwords_for_language(limba)
     cuvinte = word_tokenize(text)
-    num_to_replace = max(1, int(len(cuvinte) * 0.2))
-    cuvinte_inlocuibile = [cuvant for cuvant in cuvinte if cuvant.lower() not in stop_words and cuvant not in string.punctuation]
+    
 
+    cuvinte_inlocuibile = [
+        cuvant for cuvant in cuvinte if cuvant.lower() not in stop_words and cuvant not in string.punctuation
+    ]
+    
     print(f"Cuvinte eligibile pentru înlocuire: {cuvinte_inlocuibile}")
-
+    
     if not cuvinte_inlocuibile:
         return text
 
-    cuvinte_de_inlocuit = random.sample(cuvinte_inlocuibile, min(num_to_replace, len(cuvinte_inlocuibile)))
+    num_to_replace = max(1, int(len(cuvinte_inlocuibile) * 0.8))
+    cuvinte_de_inlocuit = random.sample(cuvinte_inlocuibile, num_to_replace)
+
+
     text_inlocuit = cuvinte.copy()
 
     for i, cuvant in enumerate(cuvinte):
         if cuvant in cuvinte_de_inlocuit:
             alternative = get_alternative_cuvinte(cuvant)
+            
+            
             filtered_alternatives = [alt for alt in alternative if '_' not in alt and len(alt) < 12]
+            
             print(f"Alternative filtrate pentru '{cuvant}': {filtered_alternatives}")
+            
             if filtered_alternatives:
-                text_inlocuit[i] = random.choice(filtered_alternatives)
+                replacement = random.choice(filtered_alternatives)
+                text_inlocuit[i] = replacement
+                print(f"Înlocuit '{cuvant}' cu '{replacement}'")
 
     return ' '.join(text_inlocuit)
 
-
-# obtine sinonime, hipernime sau antonime
 def get_alternative_cuvinte(cuvant):
     alternative = set()
     for synset in wordnet.synsets(cuvant):
